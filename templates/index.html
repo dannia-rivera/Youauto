@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>YouAuto</title>
+
+    <!-- Connects the CSS file -->
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<!-- Website title -->
+<h1>🚗 YouAuto</h1>
+
+<p>
+Find nearby gas stations, mechanics,
+and EV charging stations.
+</p>
+
+<!-- Search form -->
+<form action="/search">
+
+<h2>Search Automotive Services</h2>
+
+<label for="service">
+Choose a service
+</label>
+
+<select id="service" name="service">
+
+<option value="gas">⛽ Gas Stations</option>
+
+<option value="mechanic">🔧 Mechanics</option>
+
+<option value="ev">⚡ EV Charging</option>
+
+</select>
+
+<button type="submit">
+
+Search
+
+</button>
+
+</form>
+
+<br>
+
+<!-- Feature preview -->
+<div class="features">
+
+<div class="card">
+
+<h2>⛽ Gas Stations</h2>
+
+<p>
+Locate nearby fuel stations.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🔧 Mechanics</h2>
+
+<p>
+Find local repair shops.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⚡ EV Charging</h2>
+
+<p>
+Locate nearby charging stations.
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+
+© 2026 YouAuto
+
+</p>
+
+</footer>
+
+</body>
+
+</html>

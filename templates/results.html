@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>YouAuto Results</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<!-- Shows the selected service -->
+<h1>
+
+{{ service.title() }} Results
+
+</h1>
+
+<p>
+
+Showing available locations.
+
+</p>
+
+<!-- Displays each matching location -->
+{% for item in results %}
+
+<div class="card">
+
+<h2>
+
+{{ item.name }}
+
+</h2>
+
+<p>
+
+📍 {{ item.address }}
+
+</p>
+
+</div>
+
+{% endfor %}
+
+<br>
+
+<a href="/">
+
+← Back to Home
+
+</a>
+
+</body>
+
+</html>
