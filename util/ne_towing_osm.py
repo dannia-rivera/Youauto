@@ -1,10 +1,11 @@
+#!/usr/bin/env python3
 """
 ne_towing_osm.py
 ================
- 
+
 Collate a database of towing / recovery / roadside-assistance services in
 Nebraska (or any US state) from OpenStreetMap via the Overpass API.
- 
+
 For each operator it captures:
     - name
     - address (assembled from addr:* tags, plus the raw components)
@@ -13,7 +14,7 @@ For each operator it captures:
     - a list of services (towing + any vehicle services also tagged)
     - how it was tagged in OSM (data-quality signal)
     - flags for 24/7 availability and heavy-duty capability
- 
+
 >>> IMPORTANT CAVEAT ABOUT TOWING DATA IN OSM <<<
     OpenStreetMap has NO agreed-upon tag for towing companies. A formal
     proposal (amenity=towing) exists but is not yet adopted, so in the wild
@@ -21,47 +22,44 @@ For each operator it captures:
         - shop=car_repair            (most common; often with no actual repair)
         - service:vehicle:towing=yes (a service flag on some shops)
         - amenity=towing / shop=towing / office=towing / towing=yes  (rare)
-    This script queries ALL of those, plus a broad name filter that catches
-    "tow"/"towing"/"tow truck"/"wrecker"/"roadside" (while avoiding false
-    friends like "town" and "tower"). The name filter is deliberately loose,
-    so some rows are flagged osm_category="name match only (verify manually)".
-    Even with the wide net, expect SPARSE coverage compared with repair shops.
- 
+    This script queries ALL of those, plus a name filter for "towing"/"wrecker".
+    Even so, expect SPARSE and PATCHY coverage compared with repair shops.
+
     Because of that sparseness, for towing specifically the cleaner route is
     often the ReferenceUSA / Data Axle library export filtered on
     NAICS 488410 "Motor Vehicle Towing" -- it will be far more complete.
     Use this OSM script as a free, redistributable supplement.
- 
+
 USAGE
     pip install requests
     python ne_towing_osm.py                 # defaults to Nebraska (US-NE)
     python ne_towing_osm.py --state US-IA   # a different state
     python ne_towing_osm.py --out mydata    # custom output filename stem
- 
+
 OUTPUT
     <out>.csv   - one row per operator, spreadsheet-friendly
     <out>.json  - same records plus the complete raw OSM tag set (for audit)
- 
+
 POLITE USAGE
     The public Overpass endpoints are a shared, donated resource. Run this
     infrequently (the whole state is one query); don't loop over it.
 """
- 
+
 import argparse
 import csv
 import json
 import sys
 import time
- 
+
 import requests
- 
+
 # Public Overpass mirrors, tried in order if one is busy/unavailable.
 OVERPASS_ENDPOINTS = [
     "https://overpass-api.de/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
     "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
 ]
- 
+
 # Human-readable labels for service:* sub-tags we may encounter.
 SERVICE_LABELS = {
     # towing-specific (some from the amenity=towing proposal)
@@ -88,13 +86,13 @@ SERVICE_LABELS = {
     "body_repair": "Body work",
     "battery": "Battery",
 }
- 
- 
+
+
 def build_query(state_code: str) -> str:
     """Build an Overpass QL query for towing operators within a US state.
- 
+
     state_code is an ISO 3166-2 code, e.g. "US-NE" for Nebraska.
- 
+
     Towing has no canonical tag, so we union several possibilities. `nwr`
     matches nodes, ways AND relations in one clause. Overpass sets are keyed
     by element identity, so an operator matching multiple clauses appears
@@ -109,13 +107,13 @@ area["ISO3166-2"="{state_code}"][admin_level=4]->.state;
   nwr["shop"="towing"](area.state);
   nwr["office"="towing"](area.state);
   nwr["towing"~"^(yes|only)$"](area.state);
-  nwr[~"^service:towing"~"."](area.state);
-  nwr["name"~"tow([ .&/-]|ing|$)|wreck|roadside",i](area.state);
+  nwr["service:towing"](area.state);
+  nwr["name"~"towing|wrecker",i](area.state);
 );
 out center tags;
 """
- 
- 
+
+
 def fetch(query: str) -> dict:
     """POST the query to Overpass, trying each mirror until one responds."""
     last_error = None
@@ -130,8 +128,8 @@ def fetch(query: str) -> dict:
             last_error = exc
             time.sleep(2)
     raise RuntimeError(f"All Overpass endpoints failed. Last error: {last_error}")
- 
- 
+
+
 def assemble_address(tags: dict) -> str:
     """Join addr:* tags into a single human-readable address string."""
     house = tags.get("addr:housenumber", "")
@@ -144,8 +142,8 @@ def assemble_address(tags: dict) -> str:
     if postcode:
         city_line = f"{city_line} {postcode}".strip()
     return ", ".join(p for p in [line1, city_line] if p)
- 
- 
+
+
 def extract_services(tags: dict) -> list:
     """Collect services from service:vehicle:* and service:towing:* tags
     whose value is yes/only, plus a bare towing=yes."""
@@ -163,8 +161,8 @@ def extract_services(tags: dict) -> list:
         services.append("Towing")
     seen = set()
     return [s for s in services if not (s in seen or seen.add(s))]
- 
- 
+
+
 def osm_category(tags: dict) -> str:
     """Report HOW this operator was tagged -- a data-quality signal, since
     towing is tagged so inconsistently in OSM."""
@@ -181,14 +179,14 @@ def osm_category(tags: dict) -> str:
     if tags.get("service:vehicle:towing", "").lower() in ("yes", "only"):
         return "service:vehicle:towing=yes"
     return "name match only (verify manually)"
- 
- 
+
+
 def is_24_7(tags: dict) -> bool:
     """True if opening_hours advertises round-the-clock availability."""
     hours = tags.get("opening_hours", "").lower()
     return "24/7" in hours or "24 hours" in hours or "00:00-24:00" in hours
- 
- 
+
+
 def is_heavy_duty(tags: dict, services: list) -> bool:
     """Heuristic for heavy-duty capability from tags, services, or name."""
     if tags.get("service:towing:heavy_duty", "").lower() in ("yes", "only"):
@@ -198,8 +196,8 @@ def is_heavy_duty(tags: dict, services: list) -> bool:
     if "heavy" in tags.get("name", "").lower():
         return True
     return False
- 
- 
+
+
 def parse_elements(data: dict) -> list:
     """Transform raw Overpass elements into flat, tidy records."""
     records = []
@@ -207,7 +205,7 @@ def parse_elements(data: dict) -> list:
         tags = el.get("tags", {})
         lat = el.get("lat") or el.get("center", {}).get("lat")
         lon = el.get("lon") or el.get("center", {}).get("lon")
- 
+
         services = extract_services(tags)
         record = {
             "osm_type": el.get("type"),
@@ -232,11 +230,11 @@ def parse_elements(data: dict) -> list:
             "raw_tags": tags,
         }
         records.append(record)
- 
+
     records.sort(key=lambda r: (r["name"] == "", r["name"].lower()))
     return records
- 
- 
+
+
 def write_csv(records: list, path: str) -> None:
     """Write the flat records to CSV (excludes the bulky raw_tags field)."""
     columns = [
@@ -250,14 +248,14 @@ def write_csv(records: list, path: str) -> None:
         writer.writeheader()
         for r in records:
             writer.writerow(r)
- 
- 
+
+
 def write_json(records: list, path: str) -> None:
     """Write full records, including raw OSM tags, for auditing."""
     with open(path, "w", encoding="utf-8") as f:
         json.dump(records, f, indent=2, ensure_ascii=False)
- 
- 
+
+
 def summarize(records: list) -> None:
     """Print a short summary, including a breakdown by how each was tagged."""
     total = len(records)
@@ -265,14 +263,14 @@ def summarize(records: list) -> None:
     with_addr = sum(1 for r in records if r["address"])
     with_phone = sum(1 for r in records if r["phone"])
     day_night = sum(1 for r in records if r["available_24_7"])
- 
+
     print("\n--- Summary ---", file=sys.stderr)
     print(f"Total towing operators found: {total}", file=sys.stderr)
     print(f"  with a name:                {named}", file=sys.stderr)
     print(f"  with a parsed address:      {with_addr}", file=sys.stderr)
     print(f"  with a phone number:        {with_phone}", file=sys.stderr)
     print(f"  advertising 24/7:           {day_night}", file=sys.stderr)
- 
+
     # Tag-source breakdown highlights how messy the underlying data is.
     print("  tagged as:", file=sys.stderr)
     counts = {}
@@ -280,8 +278,8 @@ def summarize(records: list) -> None:
         counts[r["osm_category"]] = counts.get(r["osm_category"], 0) + 1
     for cat, n in sorted(counts.items(), key=lambda kv: -kv[1]):
         print(f"    {n:>4}  {cat}", file=sys.stderr)
- 
- 
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -290,23 +288,23 @@ def main() -> None:
     parser.add_argument("--out", default="ne_towing",
                         help="Output filename stem (default: ne_towing)")
     args = parser.parse_args()
- 
+
     query = build_query(args.state)
     data = fetch(query)
     records = parse_elements(data)
- 
+
     csv_path = f"{args.out}.csv"
     json_path = f"{args.out}.json"
     write_csv(records, csv_path)
     write_json(records, json_path)
- 
+
     summarize(records)
     print(f"\nWrote {csv_path} and {json_path}", file=sys.stderr)
     print("Because OSM towing data is sparse, cross-check against NAICS 488410 "
           "if you need completeness.", file=sys.stderr)
     print("Remember to attribute: © OpenStreetMap contributors (ODbL).",
           file=sys.stderr)
- 
- 
+
+
 if __name__ == "__main__":
     main()
