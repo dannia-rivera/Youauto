@@ -11,20 +11,26 @@ PORT = 8080
 DIR = Path(__file__).resolve().parent
 
 
+class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
+    """Serve files with no-cache headers so refreshes always get fresh data."""
+    def end_headers(self):
+        self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
+        self.send_header("Pragma", "no-cache")
+        self.send_header("Expires", "0")
+        super().end_headers()
+
+
 def main():
     os.chdir(DIR)
-    server = http.server.HTTPServer(
-        ("", PORT),
-        http.server.SimpleHTTPRequestHandler,
-    )
-    # Open browser after a tiny delay so the server is listening
+    http.server.HTTPServer.allow_reuse_address = True
+    server = http.server.HTTPServer(("", PORT), NoCacheHandler)
     threading.Timer(0.5, lambda: webbrowser.open(f"http://localhost:{PORT}/preview.html")).start()
-    print(f"✓ Serving {DIR} on http://localhost:{PORT}/preview.html")
+    print(f"Serving {DIR} on http://localhost:{PORT}/preview.html")
     print("  Press Ctrl+C to stop.")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
-        print("\n✗ Shutting down.")
+        print("\nShutting down.")
         server.server_close()
         sys.exit(0)
 

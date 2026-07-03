@@ -237,8 +237,9 @@ let currentSort = { col: 'distance', asc: true };
 // ── Load CSVs ──
 async function loadData() {
   try {
+    const ts = Date.now();
     const [mechResp, towResp] = await Promise.all([
-      fetch('ne_mechanics.csv'), fetch('ne_towing.csv')
+      fetch(`ne_mechanics.csv?t=${ts}`), fetch(`ne_towing.csv?t=${ts}`)
     ]);
     const mechText = await mechResp.text();
     const towText  = await towResp.text();
@@ -304,7 +305,8 @@ async function loadData() {
       });
     }
 
-    console.log(`Loaded ${allRows.length} entries (${mechRows.length - 1} mechanics, ${towRows.length - 1} towing)`);
+    const withCity = allRows.filter(r => r.city).length;
+    console.log(`Loaded ${allRows.length} entries (${mechRows.length - 1} mechanics, ${towRows.length - 1} towing) — ${withCity} with city`);
   } catch (err) {
     console.error('Failed to load CSV files:', err);
     document.getElementById('tableBody').innerHTML =
