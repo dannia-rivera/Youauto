@@ -41,6 +41,7 @@ import csv
 import json
 import sys
 import time
+from urllib.parse import urlencode
 
 import requests
 
@@ -168,6 +169,124 @@ def is_transmission_specialist(tags: dict, services: list) -> bool:
     return False
 
 
+# ── Nominatim reverse geocoding to fill in missing addresses ──────────
+
+NOMINATIM_URL = "https://nominatim.openstreetmap.org/reverse"
+
+# Nominatim's address dict uses different keys depending on place size.
+# We try these in order to find the most specific locality name.
+CITY_KEYS = ("city", "town", "village", "hamlet", "municipality", "county")
+
+
+def _nominatim_reverse(lat: float, lon: float, max_retries: int = 4) -> dict | None:
+    """Call Nominatim reverse geocoding with retry+backoff on 429.
+    Returns the 'address' sub-dict or None."""
+    params = {"format": "json", "lat": lat, "lon": lon, "addressdetails": 1}
+    url = f"{NOMINATIM_URL}?{urlencode(params)}"
+    for attempt in range(max_retries):
+        try:
+            resp = requests.get(
+                url,
+                headers={"User-Agent": "YouAuto/1.0 (mechanic_scrape; OSM data enrichment)"},
+                timeout=30,
+            )
+            if resp.status_code == 429:
+                wait = (attempt + 1) * 3
+                print(f"  rate-limited, retrying in {wait}s…", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+            return data.get("address") or None
+        except requests.RequestException as exc:
+            print(f"  Nominatim error ({lat:.5f},{lon:.5f}): {exc}", file=sys.stderr)
+            return None
+    print(f"  Nominatim: gave up after {max_retries} retries", file=sys.stderr)
+    return None
+
+
+def _extract_locality(address: dict) -> str:
+    """Pull the best city/town/village name from a Nominatim address dict."""
+    for key in CITY_KEYS:
+        val = address.get(key, "").strip()
+        if val:
+            return val
+    return ""
+
+
+def enrich_addresses(records: list, delay: float = 2.5) -> list:
+    """For every record missing a city, reverse-geocode via Nominatim and
+    fill in any missing address fields (city, state, postcode, street, etc.).
+
+    Respects Nominatim's 1 req/s rate limit with a configurable *delay*.
+    Results are cached by a rounded-coordinate key so duplicate locations
+    only trigger one API call.
+    """
+    cache: dict[tuple[int, int], dict | None] = {}
+    enriched = 0
+    total_missing = sum(1 for r in records if not r["city"])
+
+    if total_missing == 0:
+        return records
+
+    print(f"\nEnriching {total_missing} records missing city via Nominatim…",
+          file=sys.stderr)
+
+    for i, r in enumerate(records):
+        if r["city"]:
+            continue
+
+        # Round to ~10 m to deduplicate nearby points
+        cache_key = (round(r["lat"] * 10000), round(r["lon"] * 10000))
+        if cache_key not in cache:
+            time.sleep(delay)
+            cache[cache_key] = _nominatim_reverse(r["lat"], r["lon"])
+
+        addr = cache[cache_key]
+        if addr is None:
+            continue
+
+        # Fill city
+        if not r["city"]:
+            locality = _extract_locality(addr)
+            if locality:
+                r["city"] = locality
+
+        # Fill other missing fields
+        if not r["state"]:
+            r["state"] = addr.get("state", "")
+        if not r["postcode"]:
+            r["postcode"] = addr.get("postcode", "")
+        if not r["housenumber"]:
+            r["housenumber"] = addr.get("house_number", "")
+        if not r["street"]:
+            r["street"] = addr.get("road", addr.get("pedestrian", ""))
+
+        # Rebuild the full address string
+        r["address"] = assemble_address_from_parts(r)
+
+        enriched += 1
+        if enriched % 50 == 0:
+            print(f"  ... {enriched}/{total_missing} enriched", file=sys.stderr)
+
+    print(f"  ✓ enriched {enriched} records", file=sys.stderr)
+    return records
+
+
+def assemble_address_from_parts(r: dict) -> str:
+    """Rebuild the address string from (possibly enriched) components."""
+    house = r.get("housenumber", "")
+    street = r.get("street", "")
+    line1 = " ".join(p for p in [house, street] if p).strip()
+    city = r.get("city", "")
+    state = r.get("state", "")
+    postcode = r.get("postcode", "")
+    city_line = ", ".join(p for p in [city, state] if p)
+    if postcode:
+        city_line = f"{city_line} {postcode}".strip()
+    return ", ".join(p for p in [line1, city_line] if p)
+
+
 def parse_elements(data: dict) -> list:
     """Transform raw Overpass elements into flat, tidy records."""
     records = []
@@ -249,11 +368,16 @@ def main() -> None:
                         help="ISO 3166-2 state code (default: US-NE for Nebraska)")
     parser.add_argument("--out", default="ne_mechanics",
                         help="Output filename stem (default: ne_mechanics)")
+    parser.add_argument("--no-enrich", action="store_true",
+                        help="Skip Nominatim reverse-geocoding to fill missing addresses")
     args = parser.parse_args()
 
     query = build_query(args.state)
     data = fetch(query)
     records = parse_elements(data)
+
+    if not args.no_enrich:
+        records = enrich_addresses(records)
 
     csv_path = f"{args.out}.csv"
     json_path = f"{args.out}.json"

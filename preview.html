@@ -264,8 +264,10 @@ async function loadData() {
       const lat = parseFloat(row[mIdx.lat]);
       const lon = parseFloat(row[mIdx.lon]);
       if (isNaN(lat) || isNaN(lon)) continue;
+      const name = (row[mIdx.name] || '').trim();
+      if (!name) continue; // skip unnamed entries
       allRows.push({
-        name: row[mIdx.name] || '',
+        name,
         city: row[mIdx.city] || '',
         state: row[mIdx.state] || '',
         lat, lon,
@@ -285,8 +287,10 @@ async function loadData() {
       const lat = parseFloat(row[tIdx.lat]);
       const lon = parseFloat(row[tIdx.lon]);
       if (isNaN(lat) || isNaN(lon)) continue;
+      const name = (row[tIdx.name] || '').trim();
+      if (!name) continue; // skip unnamed entries
       allRows.push({
-        name: row[tIdx.name] || '',
+        name,
         city: row[tIdx.city] || '',
         state: row[tIdx.state] || '',
         lat, lon,
