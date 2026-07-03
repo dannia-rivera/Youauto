@@ -2,21 +2,21 @@
 
 Youauto is a flask web application that helps users locate nearby automotive services.
 
-//Release Notes for Code Milestone 1
--Created the Flask web application using Python and Flask.
--Added a homepage with a service selection menu.
--Users can search for:
-  -Gas Stations
-  -Mechanics
-  -EV Charging Station
--Added a results page for each service type.
--Created a responsive interface using HTML anf CSS
+  Release Notes for Code Milestone 1
+    -Created the Flask web application using Python and Flask.
+    -Added a homepage with a service selection menu.
+    -Users can search for:
+       -Gas Stations
+      -Mechanics
+      -EV Charging Station
+    -Added a results page for each service type.
+    -Created a responsive interface using HTML anf CSS
 
-//Tech used:
--Python
--Flask
--HTML
--CSS
+##Tech used:
+  -Python
+  -Flask
+  -HTML
+  -CSS
 
 ##Implementing map and Search
   - The map and search batton was created for a customer to easiy locate the place they need for their car services that are near them. This was implemented to avoid waste of time while looking for help.
