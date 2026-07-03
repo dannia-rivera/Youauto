@@ -17,5 +17,6 @@ Youauto is a flask web application that helps users locate nearby automotive ser
 -Flask
 -HTML
 -CSS
-#Implementing map and Search
+
+##Implementing map and Search
   - The map and search batton was created for a customer to easiy locate the place they need for their car services that are near them. This was implemented to avoid waste of time while looking for help.
