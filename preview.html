@@ -147,23 +147,20 @@
 
   <div class="card">
     <div class="input-row">
-      <div class="field">
-        <label for="lat">Latitude</label>
-        <input id="lat" type="text" placeholder="e.g. 40.8136" value="40.8136">
-      </div>
-      <div class="field">
-        <label for="lon">Longitude</label>
-        <input id="lon" type="text" placeholder="e.g. -96.7026" value="-96.7026">
+      <div class="field" style="flex:1; min-width:280px;">
+        <label for="address">Address or place</label>
+        <input id="address" type="text" placeholder="e.g. 123 Main St, Omaha, NE or just Lincoln, NE" value="Lincoln, NE">
       </div>
       <button id="useLocationBtn" class="use-my-location" style="text-decoration:none; background:none; color:var(--accent); padding:0; align-self:flex-end; margin-bottom:2px;">
         📍 Use my location
       </button>
-      <div class="field wide">
+      <div class="field" style="flex:1; min-width:220px;">
         <label for="service">Service filter (optional)</label>
         <input id="service" type="text" placeholder="e.g. transmission, towing, oil change, brakes…">
       </div>
       <button id="searchBtn">Search</button>
     </div>
+    <div id="geocodeStatus" style="font-size:0.8rem; color:var(--text-secondary); margin-top:8px; min-height:1.2em;"></div>
   </div>
 
   <div id="resultsArea">
@@ -311,17 +308,49 @@ async function loadData() {
   }
 }
 
-// ── Search & render ──
-function doSearch() {
-  const lat = parseFloat(document.getElementById('lat').value);
-  const lon = parseFloat(document.getElementById('lon').value);
-  const svcFilter = document.getElementById('service').value.trim().toLowerCase();
+// ── Geocode address via OpenStreetMap Nominatim ──
+async function geocode(address) {
+  const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(address)}`;
+  const resp = await fetch(url);
+  const data = await resp.json();
+  if (!data.length) return null;
+  return {
+    lat: parseFloat(data[0].lat),
+    lon: parseFloat(data[0].lon),
+    display: data[0].display_name,
+  };
+}
 
-  if (isNaN(lat) || isNaN(lon)) {
+// ── Reverse geocode coords to address ──
+async function reverseGeocode(lat, lon) {
+  const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`;
+  const resp = await fetch(url);
+  const data = await resp.json();
+  return data.display_name || `${lat}, ${lon}`;
+}
+
+// ── Search & render ──
+async function doSearch() {
+  const address = document.getElementById('address').value.trim();
+  const svcFilter = document.getElementById('service').value.trim().toLowerCase();
+  const statusEl = document.getElementById('geocodeStatus');
+
+  if (!address) {
     document.getElementById('tableBody').innerHTML =
-      `<tr><td colspan="5" class="empty">Please enter valid latitude and longitude.</td></tr>`;
+      `<tr><td colspan="5" class="empty">Please enter an address or place name.</td></tr>`;
     return;
   }
+
+  statusEl.textContent = 'Looking up address…';
+  const geo = await geocode(address);
+  if (!geo) {
+    statusEl.textContent = '';
+    document.getElementById('tableBody').innerHTML =
+      `<tr><td colspan="5" class="empty">Could not find that address. Try being more specific (e.g. "123 Main St, Omaha, NE").</td></tr>`;
+    return;
+  }
+  statusEl.textContent = `📍 ${geo.display}`;
+  const { lat, lon } = geo;
 
   let results = allRows.map(r => ({
     ...r,
@@ -434,10 +463,11 @@ document.getElementById('searchBtn').addEventListener('click', doSearch);
 
 document.getElementById('useLocationBtn').addEventListener('click', () => {
   if (!navigator.geolocation) { alert('Geolocation not supported by your browser.'); return; }
+  document.getElementById('geocodeStatus').textContent = 'Getting your location…';
   navigator.geolocation.getCurrentPosition(
-    pos => {
-      document.getElementById('lat').value = pos.coords.latitude.toFixed(6);
-      document.getElementById('lon').value = pos.coords.longitude.toFixed(6);
+    async pos => {
+      const addr = await reverseGeocode(pos.coords.latitude, pos.coords.longitude);
+      document.getElementById('address').value = addr;
       doSearch();
     },
     err => { alert('Could not get location: ' + err.message); }
@@ -454,7 +484,7 @@ document.querySelectorAll('input').forEach(inp => {
   document.getElementById('tableBody').innerHTML =
     `<tr><td colspan="5" class="empty">Loading data files…</td></tr>`;
   await loadData();
-  doSearch(); // initial search with default coords (Lincoln, NE)
+  doSearch(); // initial search with default address (Lincoln, NE)
 })();
 </script>
 </body>
