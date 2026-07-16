@@ -1,26 +1,5 @@
 #!/usr/bin/env python3
 """
-ne_mechanics_osm.py
-===================
-
-Collate a database of car mechanics / auto-repair shops in Nebraska (or any
-US state) from OpenStreetMap via the Overpass API.
-
-For each shop it captures:
-    - name
-    - address (assembled from addr:* tags, plus the raw components)
-    - latitude / longitude
-    - phone, website, opening hours
-    - a list of services (derived from OSM "service:vehicle:*" tags)
-    - a heuristic flag for transmission specialists
-
-WHY OPENSTREETMAP
-    - Free, no API key required.
-    - Data is licensed under the ODbL: you may reuse and redistribute it,
-      as long as you attribute "© OpenStreetMap contributors".
-    - Coverage is strongest in metro areas (Omaha, Lincoln) and thinner in
-      rural counties. Treat this as a strong starting point, not a census.
-
 USAGE
     pip install requests
     python ne_mechanics_osm.py                 # defaults to Nebraska (US-NE)
@@ -30,10 +9,6 @@ USAGE
 OUTPUT
     <out>.csv   - one row per shop, spreadsheet-friendly
     <out>.json  - same records plus the complete raw OSM tag set (for audit)
-
-NOTE ON POLITE USAGE
-    The public Overpass endpoints are a shared, donated resource. Run this
-    infrequently (the whole state is one query) and don't hammer it in a loop.
 """
 
 import argparse

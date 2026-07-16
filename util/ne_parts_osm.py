@@ -1,27 +1,5 @@
 #!/usr/bin/env python3
 """
-ne_parts_osm.py
-===============
-
-Collate a database of auto parts stores in Nebraska (or any US state) from
-OpenStreetMap via the Overpass API.
-
-For each store it captures:
-    - name
-    - brand (OSM brand tag — useful for chains like AutoZone, NAPA, O'Reilly)
-    - address (assembled from addr:* tags, plus the raw components)
-    - latitude / longitude
-    - phone, website, opening hours
-    - a list of services / specialities derived from OSM tags
-    - flags for chain stores, delivery, and 24/7 availability
-
-WHY OPENSTREETMAP
-    - Free, no API key required.
-    - Data is licensed under the ODbL: you may reuse and redistribute it,
-      as long as you attribute "© OpenStreetMap contributors".
-    - Parts chains (AutoZone, O'Reilly, NAPA, Advance Auto) tend to be
-      well-mapped in metro areas; rural independent stores are sparser.
-
 USAGE
     pip install requests
     python ne_parts_osm.py                 # defaults to Nebraska (US-NE)
@@ -32,10 +10,6 @@ USAGE
 OUTPUT
     <out>.csv   - one row per store, spreadsheet-friendly
     <out>.json  - same records plus the complete raw OSM tag set (for audit)
-
-POLITE USAGE
-    The public Overpass endpoints are a shared, donated resource. Run this
-    infrequently (the whole state is one query) and don't hammer it in a loop.
 """
 
 import argparse
