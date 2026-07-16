@@ -1,27 +1,5 @@
 #!/usr/bin/env python3
 """
-ne_charging_osm.py
-==================
-
-Collate a database of EV charging stations in Nebraska (or any US state)
-from OpenStreetMap via the Overpass API.
-
-For each station it captures:
-    - name, operator (e.g. Tesla, ChargePoint, Electrify America)
-    - address (assembled from addr:* tags, plus reverse-geocode enrichment)
-    - latitude / longitude
-    - phone, website, opening hours, fee, access type
-    - connector types with counts (e.g. "CCS x2, CHAdeMO x1, J1772 x4")
-    - max power per connector type (kW)
-    - total capacity (vehicles that can charge simultaneously)
-
-WHY OPENSTREETMAP
-    - Free, no API key required.  OSM charging-station coverage in the US is
-      surprisingly good — Tesla Superchargers, ChargePoint, and Electrify
-      America locations are well-mapped, especially along interstates.
-    - Connector-level detail (socket:ccs=2, socket:type1=4, etc.) lets you
-      filter by the plug your vehicle actually uses.
-
 USAGE
     pip install requests
     python ne_charging_osm.py                 # defaults to Nebraska (US-NE)
@@ -32,10 +10,6 @@ USAGE
 OUTPUT
     <out>.csv   - one row per station, spreadsheet-friendly
     <out>.json  - same records plus the complete raw OSM tag set (for audit)
-
-POLITE USAGE
-    The public Overpass endpoints are a shared, donated resource. Run this
-    infrequently (the whole state is one query) and don't hammer it in a loop.
 """
 
 import argparse

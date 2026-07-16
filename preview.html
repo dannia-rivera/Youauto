@@ -176,6 +176,48 @@
   .leaflet-popup-content .popup-link a { color: var(--accent); }
 
   .geo-status { font-size: 0.8rem; color: var(--text-secondary); margin-top: 6px; min-height: 1.2em; }
+
+  /* --- REPORT MODAL --- */
+  .modal-overlay {
+    display: none; position: fixed; inset: 0; z-index: 10000;
+    background: rgba(0,0,0,.45); justify-content: center; align-items: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--surface); border-radius: var(--radius); padding: 24px;
+    width: 420px; max-width: 90vw; box-shadow: 0 8px 30px rgba(0,0,0,.18);
+  }
+  .modal h3 { margin-bottom: 6px; }
+  .modal .modal-sub { font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 14px; }
+  .modal .field { margin-bottom: 12px; }
+  .modal .field input, .modal .field textarea {
+    width: 100%; padding: 8px 10px; border: 1px solid var(--border);
+    border-radius: 6px; font-size: 0.9rem; font-family: inherit;
+  }
+  .modal .field textarea { resize: vertical; min-height: 80px; }
+  .modal .field input:focus, .modal .field textarea:focus {
+    outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+  }
+  .modal-buttons { display: flex; gap: 8px; justify-content: flex-end; }
+  .btn-secondary {
+    padding: 9px 18px; border: 1px solid var(--border); border-radius: 6px;
+    font-size: 0.9rem; font-weight: 500; cursor: pointer;
+    background: var(--surface); color: var(--text);
+  }
+  .btn-secondary:hover { background: var(--bg); }
+  .report-toast {
+    position: fixed; bottom: 20px; right: 20px; z-index: 10001;
+    background: #065f46; color: #fff; padding: 10px 18px; border-radius: 8px;
+    font-size: 0.9rem; opacity: 0; transform: translateY(10px);
+    transition: opacity .3s, transform .3s; pointer-events: none;
+  }
+  .report-toast.show { opacity: 1; transform: translateY(0); }
+  #reportBtn {
+    background: none; border: 1px solid var(--border); color: var(--text);
+    padding: 7px 14px; font-size: 0.82rem; font-weight: 500;
+    align-self: flex-end; margin-bottom: 3px;
+  }
+  #reportBtn:hover { background: var(--row-hover); }
   .use-my-location {
     font-size: 0.8rem; color: var(--accent); cursor: pointer; background: none; border: none;
     padding: 0; font-weight: 500; text-decoration: underline;
@@ -216,6 +258,7 @@
         <input id="maxDist" type="number" placeholder="unlimited" min="1" style="width:100px;">
       </div>
       <button id="searchBtn">Search</button>
+      <button id="reportBtn">🚩 Report</button>
     </div>
     <div class="geo-status" id="geocodeStatus"></div>
   </div>
@@ -246,6 +289,27 @@
       </div>
     </div>
   </div>
+
+  <!-- Report modal -->
+  <div class="modal-overlay" id="reportModal">
+    <div class="modal">
+      <h3>🚩 Report an issue</h3>
+      <p class="modal-sub">Flag incorrect info, missing data, or suggest a correction.</p>
+      <div class="field">
+        <label>Location / shop name</label>
+        <input id="reportLocation" type="text" placeholder="Which shop or location is this about?">
+      </div>
+      <div class="field">
+        <label>What's wrong?</label>
+        <textarea id="reportComment" placeholder="e.g. wrong hours, missing service, incorrect address…"></textarea>
+      </div>
+      <div class="modal-buttons">
+        <button class="btn-secondary" id="reportCancel">Cancel</button>
+        <button id="reportSubmit">Submit</button>
+      </div>
+    </div>
+  </div>
+  <div class="report-toast" id="reportToast">✓ Report submitted. Thank you!</div>
 
 </div>
 
@@ -309,6 +373,22 @@ function initMap(lat, lon) {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       maxZoom: 19,
     }).addTo(map);
+
+    // Catch report clicks from popup links via event delegation
+    map.on('popupopen', () => {
+      setTimeout(() => {
+        document.querySelectorAll('.popup-report').forEach(link => {
+          link.onclick = (e) => {
+            e.preventDefault();
+            const name = link.dataset.name || '';
+            const addr = link.dataset.addr || '';
+            document.getElementById('reportLocation').value = name ? `${name} — ${addr}` : addr;
+            document.getElementById('reportComment').value = '';
+            document.getElementById('reportModal').classList.add('open');
+          };
+        });
+      }, 50);
+    });
   } else {
     map.setView([lat, lon], 10);
   }
@@ -371,9 +451,10 @@ function addMarkers(results, searchLat, searchLon) {
         <div class="popup-addr">${escHtml(r.address || r.city + (r.state ? ', ' + r.state : ''))}</div>
         ${r.website ? `<div class="popup-web"><a href="${escHtml(r.website)}" target="_blank">🌐 ${escHtml(r.website)}</a></div>` : ''}
         <div class="popup-svcs">${svcStr}</div>
-        <div class="popup-link">
-          <a href="${escHtml(r.osm_url || '#')}" target="_blank">View on OpenStreetMap ↗</a>
-          &nbsp;·&nbsp; ${r.distance.toFixed(1)} mi
+        <div class="popup-link" style="display:flex;justify-content:space-between;align-items:center;">
+          <span><a href="${escHtml(r.osm_url || '#')}" target="_blank">View on OpenStreetMap ↗</a>
+          &nbsp;·&nbsp; ${r.distance.toFixed(1)} mi</span>
+          <a href="#" class="popup-report" data-name="${escHtml(r.name)}" data-addr="${escHtml(r.address || r.city + (r.state ? ', ' + r.state : ''))}" style="font-size:0.8rem;white-space:nowrap;">🚩 Report</a>
         </div>
       `);
 
@@ -723,6 +804,42 @@ document.getElementById('useLocationBtn').addEventListener('click', () => {
 
 document.querySelectorAll('input').forEach(inp => {
   inp.addEventListener('keydown', e => { if (e.key === 'Enter') doSearch(); });
+});
+
+// ── Report modal ──
+const reportModal = document.getElementById('reportModal');
+const reportToast = document.getElementById('reportToast');
+
+document.getElementById('reportBtn').addEventListener('click', () => {
+  // Pre-fill location from current search address
+  document.getElementById('reportLocation').value = document.getElementById('address').value;
+  document.getElementById('reportComment').value = '';
+  reportModal.classList.add('open');
+});
+
+document.getElementById('reportCancel').addEventListener('click', () => {
+  reportModal.classList.remove('open');
+});
+
+reportModal.addEventListener('click', (e) => {
+  if (e.target === reportModal) reportModal.classList.remove('open');
+});
+
+document.getElementById('reportSubmit').addEventListener('click', async () => {
+  const location = document.getElementById('reportLocation').value.trim();
+  const comment = document.getElementById('reportComment').value.trim();
+  if (!comment) { alert('Please enter a comment.'); return; }
+
+  const body = new URLSearchParams({ location, comment }).toString();
+  try {
+    const resp = await fetch('/report', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body });
+    if (!resp.ok) { const text = await resp.text(); alert(text); return; }
+    reportModal.classList.remove('open');
+    reportToast.classList.add('show');
+    setTimeout(() => reportToast.classList.remove('show'), 2500);
+  } catch (err) {
+    alert('Could not submit report. Is the server running?');
+  }
 });
 
 // ── Boot ──

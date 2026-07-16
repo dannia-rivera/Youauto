@@ -273,8 +273,8 @@ class TestSearchFilter:
 # SERVER BEHAVIOUR
 # ═════════════════════════════════════════════════════════════════════════════
 
-class TestNoCacheHandler:
-    """The NoCacheHandler must send cache-busting headers on every response."""
+class TestHandler:
+    """The Handler must send cache-busting headers on every response."""
 
     def test_sends_no_cache_headers(self):
         """Verify end_headers() adds the three cache-prevention headers."""
@@ -290,14 +290,14 @@ class TestNoCacheHandler:
         # We intercept send_header during that first request.
         headers_sent = {}
 
-        original_send_header = preview.NoCacheHandler.send_header
+        original_send_header = preview.Handler.send_header
 
         def capture_header(self, keyword, value):
             headers_sent[keyword] = value
             return original_send_header(self, keyword, value)
 
-        with mock.patch.object(preview.NoCacheHandler, "send_header", capture_header):
-            handler = preview.NoCacheHandler(
+        with mock.patch.object(preview.Handler, "send_header", capture_header):
+            handler = preview.Handler(
                 mock_request, ("127.0.0.1", 12345), mock.Mock()
             )
 
