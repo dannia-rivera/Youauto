@@ -27,6 +27,8 @@ Youauto is a flask web application that helps users locate nearby automotive ser
 open-map-scrape
 
 ### Features Added
+- Added Nebraska New Car Dealership dataset
+- Added Nebraska Auto Parts store dataset
 - Added Nebraska mechanic dataset.
 - Added Nebraska towing dataset.
 - Added address-based searching.
