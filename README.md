@@ -42,3 +42,51 @@ open-map-scrape
 - City information is shown correctly.
 - Mechanic and towing services are displayed.
 - Service filtering is available.
+Code Milestone 3 – Release Notes
+
+Branch:
+Milestone_3
+
+New Features Added
+
+* Added Nebraska EV charging station dataset.
+* Added Nebraska auto parts store dataset.
+* Added Nebraska dealership dataset.
+* Expanded mechanic and towing service data.
+* Added JSON and CSV data files for multiple automotive service categories.
+* Added location-based search support using map data.
+* Improved service coverage across Nebraska.
+* Added reports.csv for storing user reports and feedback.
+* Updated preview page for testing search results and location features.
+
+Current Functionality
+
+* Users can search for automotive-related services in Nebraska.
+* Available categories include:
+
+  * Mechanics
+  * Towing Services
+  * Auto Parts Stores
+  * EV Charging Stations
+  * Dealerships
+* Search results can be organized using location information.
+* Data is stored in structured CSV and JSON files for easier maintenance.
+* Preview tools allow testing before deployment.
+
+Technology Used
+
+* Python
+* Flask
+* HTML
+* CSS
+* CSV
+* JSON
+
+Known Limitations
+
+* Live GPS navigation is still being improved.
+* Some locations may have incomplete information depending on available public data.
+* Additional service categories such as gas stations and car washes may be expanded in future versions.
+
+Summary
+Milestone 3 focused on expanding the YouAuto database and improving the search experience. The project now includes several automotive service categories throughout Nebraska, giving users more options when looking for vehicle-related services. The application structure was also improved to support future features and larger datasets.
