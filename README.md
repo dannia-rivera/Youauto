@@ -45,9 +45,9 @@ open-map-scrape
 - Mechanic and towing services are displayed.
 - Service filtering is available.
 
-Code Milestone 3 – Release Notes
+##Code Milestone 3 – Release Notes
 
-Branch:
+##Branch:
 Milestone_3
 
 New Features Added
