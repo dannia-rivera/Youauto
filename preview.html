@@ -146,6 +146,7 @@
   .src-tow   { background: #fef3c7; color: #92400e; }
   .src-parts { background: #ede9fe; color: #5b21b6; }
   .src-charge { background: #d1fae5; color: #065f46; }
+  .src-dealer { background: #fee2e2; color: #991b1b; }
 
   .empty {
     text-align: center; padding: 36px 16px; color: var(--text-secondary);
@@ -247,6 +248,7 @@
           <option value="Towing">Towing</option>
           <option value="Parts">Parts</option>
           <option value="Charging">Charging</option>
+          <option value="Dealer">Dealer</option>
         </select>
       </div>
       <div class="field" style="flex:1; min-width:180px;">
@@ -420,6 +422,11 @@ const chargeIcon = L.divIcon({
   html: '<div style="background:#059669;width:24px;height:24px;border-radius:50%;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;">⚡</div>',
   iconSize: [24, 24], iconAnchor: [12, 12], popupAnchor: [0, -14],
 });
+const dealerIcon = L.divIcon({
+  className: 'custom-marker',
+  html: '<div style="background:#dc2626;width:22px;height:22px;border-radius:50%;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;">🚗</div>',
+  iconSize: [24, 24], iconAnchor: [12, 12], popupAnchor: [0, -14],
+});
 const youIcon = L.divIcon({
   className: 'custom-marker',
   html: '<div style="background:#16a34a;width:28px;height:28px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;">📍</div>',
@@ -438,7 +445,7 @@ function addMarkers(results, searchLat, searchLon) {
   const bounds = L.latLngBounds([searchLat, searchLon]);
 
   results.forEach((r, i) => {
-    const icon = r.source === 'Towing' ? towIcon : r.source === 'Parts' ? partsIcon : r.source === 'Charging' ? chargeIcon : mechIcon;
+    const icon = r.source === 'Towing' ? towIcon : r.source === 'Parts' ? partsIcon : r.source === 'Charging' ? chargeIcon : r.source === 'Dealer' ? dealerIcon : mechIcon;
     const svcStr = r.services.length
       ? r.services.map(s => `<span class="svc-badge">${escHtml(s)}</span>`).join(' ')
       : '<em style="color:#999;">No services listed</em>';
@@ -447,7 +454,7 @@ function addMarkers(results, searchLat, searchLon) {
       .addTo(map)
       .bindPopup(`
         <strong>${escHtml(r.name)}</strong>
-        <span class="source-tag ${r.source === 'Mechanic' ? 'src-mech' : r.source === 'Towing' ? 'src-tow' : r.source === 'Parts' ? 'src-parts' : 'src-charge'}" style="margin-left:6px;">${r.source}</span>
+        <span class="source-tag ${r.source === 'Mechanic' ? 'src-mech' : r.source === 'Towing' ? 'src-tow' : r.source === 'Parts' ? 'src-parts' : r.source === 'Charging' ? 'src-charge' : 'src-dealer'}" style="margin-left:6px;">${r.source}</span>
         <div class="popup-addr">${escHtml(r.address || r.city + (r.state ? ', ' + r.state : ''))}</div>
         ${r.website ? `<div class="popup-web"><a href="${escHtml(r.website)}" target="_blank">🌐 ${escHtml(r.website)}</a></div>` : ''}
         <div class="popup-svcs">${svcStr}</div>
@@ -483,24 +490,28 @@ function highlightTableRow(idx) {
 async function loadData() {
   try {
     const ts = Date.now();
-    const [mechResp, towResp, partsResp, chargeResp] = await Promise.all([
+    const [mechResp, towResp, partsResp, chargeResp, dealerResp] = await Promise.all([
       fetch(`ne_mechanics.csv?t=${ts}`), fetch(`ne_towing.csv?t=${ts}`),
-      fetch(`ne_parts.csv?t=${ts}`), fetch(`ne_charging.csv?t=${ts}`)
+      fetch(`ne_parts.csv?t=${ts}`), fetch(`ne_charging.csv?t=${ts}`),
+      fetch(`ne_dealerships.csv?t=${ts}`)
     ]);
     const mechText    = await mechResp.text();
     const towText     = await towResp.text();
     const partsText   = await partsResp.text();
     const chargeText  = await chargeResp.text();
+    const dealerText  = await dealerResp.text();
 
     const mechRows    = parseCSV(mechText);
     const towRows     = parseCSV(towText);
     const partsRows   = parseCSV(partsText);
     const chargeRows  = parseCSV(chargeText);
+    const dealerRows  = parseCSV(dealerText);
 
     const mechHeader    = mechRows[0];
     const towHeader     = towRows[0];
     const partsHeader   = partsRows[0];
     const chargeHeader  = chargeRows[0];
+    const dealerHeader  = dealerRows[0];
 
     const mIdx = {};
     mechHeader.forEach((h, i) => { mIdx[h.trim().toLowerCase()] = i; });
@@ -510,6 +521,8 @@ async function loadData() {
     partsHeader.forEach((h, i) => { pIdx[h.trim().toLowerCase()] = i; });
     const cIdx = {};
     chargeHeader.forEach((h, i) => { cIdx[h.trim().toLowerCase()] = i; });
+    const dIdx = {};
+    dealerHeader.forEach((h, i) => { dIdx[h.trim().toLowerCase()] = i; });
 
     allRows = [];
 
@@ -583,8 +596,26 @@ async function loadData() {
       });
     }
 
+    // Dealerships
+    for (let r = 1; r < dealerRows.length; r++) {
+      const row = dealerRows[r];
+      const lat = parseFloat(row[dIdx.lat]);
+      const lon = parseFloat(row[dIdx.lon]);
+      if (isNaN(lat) || isNaN(lon)) continue;
+      const name = (row[dIdx.name] || '').trim();
+      if (!name) continue;
+      allRows.push({
+        name, city: row[dIdx.city] || '', state: row[dIdx.state] || '',
+        lat, lon, address: row[dIdx.address] || '',
+        phone: row[dIdx.phone] || '', website: row[dIdx.website] || '',
+        hours: row[dIdx.opening_hours] || '',
+        services: (row[dIdx.services] || '').split(';').map(s => s.trim()).filter(Boolean),
+        osm_url: row[dIdx.osm_url] || '', source: 'Dealer',
+      });
+    }
+
     const withCity = allRows.filter(r => r.city).length;
-    console.log(`Loaded ${allRows.length} entries (${mechRows.length - 1} mechanics, ${towRows.length - 1} towing, ${partsRows.length - 1} parts, ${chargeRows.length - 1} charging) — ${withCity} with city`);
+    console.log(`Loaded ${allRows.length} entries (${mechRows.length - 1} mechanics, ${towRows.length - 1} towing, ${partsRows.length - 1} parts, ${chargeRows.length - 1} charging, ${dealerRows.length - 1} dealers) — ${withCity} with city`);
   } catch (err) {
     console.error('Failed to load CSV files:', err);
     document.getElementById('tableBody').innerHTML =
@@ -710,7 +741,7 @@ function renderTable(results) {
         ${r.website ? `<a href="${escHtml(r.website)}" target="_blank" class="web-link" title="Visit website" onclick="event.stopPropagation()">🔗</a>` : ''}
       </td>
       <td>${escHtml(r.city || '—')}</td>
-      <td><span class="source-tag ${r.source === 'Mechanic' ? 'src-mech' : r.source === 'Towing' ? 'src-tow' : r.source === 'Parts' ? 'src-parts' : 'src-charge'}">${r.source}</span></td>
+      <td><span class="source-tag ${r.source === 'Mechanic' ? 'src-mech' : r.source === 'Towing' ? 'src-tow' : r.source === 'Parts' ? 'src-parts' : r.source === 'Charging' ? 'src-charge' : 'src-dealer'}">${r.source}</span></td>
       <td>${r.services.slice(0, 5).map(s => `<span class="svc-badge">${escHtml(s)}</span>`).join('')}${r.services.length > 5 ? ` +${r.services.length - 5} more` : ''}</td>
     </tr>
   `;}).join('');
