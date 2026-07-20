@@ -1,79 +1,79 @@
 name,brand,operator,stock_type,address,housenumber,street,city,state,postcode,lat,lon,phone,website,opening_hours,services,osm_type,osm_id,osm_url
 A&B Auto Sales,,,Used only,"3441 Adams Street, Lincoln, NE 68504",3441,Adams Street,Lincoln,NE,68504,40.8423482,-96.671009,+1-402-435-6444,https://www.abautosalesus.com/,Mo-Su 08:00-18:00,,way,1371898000,https://www.openstreetmap.org/way/1371898000
 Acura of Omaha,,,Both new & used,"4211 South 144th Street, Omaha, NE 68137",4211,South 144th Street,Omaha,NE,68137,41.218102,-96.1376083,,,"Mo-Th 08:30-21:00, Fr-Sa 08:30-18:00",,way,454950145,https://www.openstreetmap.org/way/454950145
-Air Cowboy Collectible Cars,,,,,,,,,,40.6202553,-96.633264,,,,,node,12128919813,https://www.openstreetmap.org/node/12128919813
+Air Cowboy Collectible Cars,,,,"East 2nd Street, Hickman, Nebraska 68372",,East 2nd Street,Hickman,Nebraska,68372,40.6202553,-96.633264,,,,,node,12128919813,https://www.openstreetmap.org/node/12128919813
 Al's Auto Sales,,,,"2018 West Old Lincoln Highway, Grand Island, NE 68803",2018,West Old Lincoln Highway,Grand Island,NE,68803,40.9181629,-98.3620765,,,,,way,549579186,https://www.openstreetmap.org/way/549579186
-Alenander Motors,,,,,,,,,,40.0191559,-98.0690219,,,,,node,11226101615,https://www.openstreetmap.org/node/11226101615
-AM Motors,,,Used only,,,,,,,41.1905443,-95.9775611,,,,,way,1182281998,https://www.openstreetmap.org/way/1182281998
+Alenander Motors,,,,"East 3rd Street, Superior, Nebraska 68978",,East 3rd Street,Superior,Nebraska,68978,40.0191559,-98.0690219,,,,,node,11226101615,https://www.openstreetmap.org/node/11226101615
+AM Motors,,,Used only,"Harrison Street, Omaha, Nebraska 68128",,Harrison Street,Omaha,Nebraska,68128,41.1905443,-95.9775611,,,,,way,1182281998,https://www.openstreetmap.org/way/1182281998
 American Auto Mart,,,,"5202 Center Street, Omaha, NE 68106",5202,Center Street,Omaha,NE,68106,41.2411332,-95.9956374,,,,,way,806248589,https://www.openstreetmap.org/way/806248589
 Anderson Ford South,Ford,,,"3201 Yankee Hill Road, Lincoln, NE 68516",3201,Yankee Hill Road,Lincoln,NE,68516,40.7257586,-96.6749669,+15312485279,https://www.andersonfordsouth.com,"Mo-Tu, Th 09:00-19:00; We, Fr 09:00-18:00; Sa 09:00-17:00",,node,4231283976,https://www.openstreetmap.org/node/4231283976
 "Anderson Ford, Lincoln",Ford,,Both new & used,"2500 Wildcat Drive, Lincoln, NE 68521",2500,Wildcat Drive,Lincoln,NE,68521,40.8821075,-96.6837924,+1-402-600-0651,https://www.andersonfordlincoln.com,,New Car Sales; General repairs; Used Car Sales,node,5187548637,https://www.openstreetmap.org/node/5187548637
 "Anderson Industrial Engines Co., Inc.",,,,"5542 Center Street, Omaha, NE 68106",5542,Center Street,Omaha,NE,68106,41.2382913,-95.99966,+1-800-747-1438,https://ai-engines.com/,,Engine,way,806248575,https://www.openstreetmap.org/way/806248575
 Anderson Mazda of Lincoln,Mazda,,Both new & used,"6500 Telluride Drive, Lincoln, NE 68521",6500,Telluride Drive,Lincoln,NE,68521,40.8772051,-96.6829504,+1-402-817-5203,,,New Car Sales; Used Car Sales,node,5187548647,https://www.openstreetmap.org/node/5187548647
-Archer Perdue Suzuki,,,,,,,,,,41.2032245,-96.1355145,,,,,way,602240251,https://www.openstreetmap.org/way/602240251
-Arnie's Ford,,,,,,,,,,42.2311774,-97.0168181,,,,,node,3789965985,https://www.openstreetmap.org/node/3789965985
-Arnie's Used Cars,,,Used only,,,,,,,42.2317871,-97.0167349,,,,,node,3789965984,https://www.openstreetmap.org/node/3789965984
-Arnies Ford & Mercury,,,,,,,,,,42.2351811,-97.0173974,,,,,node,3790047425,https://www.openstreetmap.org/node/3790047425
+Archer Perdue Suzuki,,,,"S Street, Omaha, Nebraska 68137",,S Street,Omaha,Nebraska,68137,41.2032245,-96.1355145,,,,,way,602240251,https://www.openstreetmap.org/way/602240251
+Arnie's Ford,,,,"East 3rd Street, Wayne, Nebraska 68787",,East 3rd Street,Wayne,Nebraska,68787,42.2311774,-97.0168181,,,,,node,3789965985,https://www.openstreetmap.org/node/3789965985
+Arnie's Used Cars,,,Used only,"Logan Street, Wayne, Nebraska 68787",,Logan Street,Wayne,Nebraska,68787,42.2317871,-97.0167349,,,,,node,3789965984,https://www.openstreetmap.org/node/3789965984
+Arnies Ford & Mercury,,,,"East 7th Street, Wayne, Nebraska 68787",,East 7th Street,Wayne,Nebraska,68787,42.2351811,-97.0173974,,,,,node,3790047425,https://www.openstreetmap.org/node/3790047425
 Atlas Auto Sales,,,Used only,"5545 Cornhusker Highway, Lincoln, NE 68504",5545,Cornhusker Highway,Lincoln,NE,68504,40.8564861,-96.6444393,+1-402-347-4982,https://www.atlasautosalesne.com/,Mo-Sa 10:00-19:00; Su 12:30-19:00,,way,1134332022,https://www.openstreetmap.org/way/1134332022
 Audi Omaha,Audi,,,"17340 Burt Street, Omaha, NE 68118",17340,Burt Street,Omaha,NE,68118,41.2648807,-96.1856875,+1-402-951-9284,,,,node,7087455809,https://www.openstreetmap.org/node/7087455809
-Auto Central,,,,,,,,,,40.9158127,-98.3628229,,,,,node,3818179096,https://www.openstreetmap.org/node/3818179096
+Auto Central,,,,"North Grant Street, Grand Island, Nebraska 68802",,North Grant Street,Grand Island,Nebraska,68802,40.9158127,-98.3628229,,,,,node,3818179096,https://www.openstreetmap.org/node/3818179096
 Auto Outlet,,,,"2924 South Locust Street, Grand Island, NE 68801",2924,South Locust Street,Grand Island,NE,68801,40.8924468,-98.3402897,,,,,node,3818179274,https://www.openstreetmap.org/node/3818179274
-Auto World,,,Used only,,,,,,,41.2562238,-96.0234203,,,,,node,12075873843,https://www.openstreetmap.org/node/12075873843
-Auto World,,,,"337 South 72nd Street, 68114",337,South 72nd Street,,,68114,41.256224,-96.0234054,,,,,way,185938484,https://www.openstreetmap.org/way/185938484
+Auto World,,,Used only,"337 South 72nd Street, Omaha, Nebraska 68114",337,South 72nd Street,Omaha,Nebraska,68114,41.2562238,-96.0234203,,,,,node,12075873843,https://www.openstreetmap.org/node/12075873843
+Auto World,,,,"337 South 72nd Street, Omaha, Nebraska 68114",337,South 72nd Street,Omaha,Nebraska,68114,41.256224,-96.0234054,,,,,way,185938484,https://www.openstreetmap.org/way/185938484
 B & D Auto Sales,,,Used only,"4820 Cornhusker Highway, Lincoln, NE 68504",4820,Cornhusker Highway,Lincoln,NE,68504,40.8530301,-96.6526944,+1-402-464-4279,https://bd-auto.com/,Mo-Fr 08:00-18:00; Sa 09:00-18:00,Used Car Sales,way,660675129,https://www.openstreetmap.org/way/660675129
-Bauerkemper's,,,,,,,,,,42.8290878,-103.0140808,,,,,way,463924124,https://www.openstreetmap.org/way/463924124
-Baxter Chrysler Dodge Jeep Ram Papillion,Chrysler,Baxter Automotive Group,,,,,,,,41.149321,-96.1476063,,,,,node,9318643424,https://www.openstreetmap.org/node/9318643424
+Bauerkemper's,,,,"Highway 20, Chadron, Nebraska 69337",,Highway 20,Chadron,Nebraska,69337,42.8290878,-103.0140808,,,,,way,463924124,https://www.openstreetmap.org/way/463924124
+Baxter Chrysler Dodge Jeep Ram Papillion,Chrysler,Baxter Automotive Group,,"Crest Road, Richland VIII Precinct, Nebraska 68138",,Crest Road,Richland VIII Precinct,Nebraska,68138,41.149321,-96.1476063,,,,,node,9318643424,https://www.openstreetmap.org/node/9318643424
 Baxter Ford,,,,"18505 California Street, Omaha, NE 68022",18505,California Street,Omaha,NE,68022,41.2639154,-96.2050244,,http://www.baxterford.net,,,way,179052580,https://www.openstreetmap.org/way/179052580
-Baxter Ford of Papillion,Ford,Baxter Automotive Group,,,,,,,,41.1493488,-96.1452438,,,,,node,9318643420,https://www.openstreetmap.org/node/9318643420
-Baxter Ford Papillion,Ford,Baxter,,,,,,,,41.1495196,-96.1450095,,,,,way,1009974468,https://www.openstreetmap.org/way/1009974468
+Baxter Ford of Papillion,Ford,Baxter Automotive Group,,"Crest Road, Richland VIII Precinct, Nebraska 68138",,Crest Road,Richland VIII Precinct,Nebraska,68138,41.1493488,-96.1452438,,,,,node,9318643420,https://www.openstreetmap.org/node/9318643420
+Baxter Ford Papillion,Ford,Baxter,,"Crest Road, Richland VIII Precinct, Nebraska 68138",,Crest Road,Richland VIII Precinct,Nebraska,68138,41.1495196,-96.1450095,,,,,way,1009974468,https://www.openstreetmap.org/way/1009974468
 Baxter Subaru,,,,"17130 Burt Street, Omaha, NE 68118",17130,Burt Street,Omaha,NE,68118,41.2653562,-96.1828606,+1-402-397-8305,,,,node,7087455786,https://www.openstreetmap.org/node/7087455786
 Baxter Toyota of Lincoln,Toyota,Baxter Toyota,Both new & used,"8600 South 33rd Street, Lincoln, NE 68516",8600,South 33rd Street,Lincoln,NE,68516,40.7254395,-96.6716336,+14024764000,https://www.toyotaoflincoln.com/,Mo-Sa 08:00-20:00; Fr-Sa 08:00-18:00; Su off,General repairs; Inspection; New Car Sales; Oil change; Used Car Sales,node,5520309460,https://www.openstreetmap.org/node/5520309460
 Baxter Volkswagen Omaha,,,,"17220 Burt Street, Omaha, NE 68118",17220,Burt Street,Omaha,NE,68118,41.2651385,-96.1840322,+1-402-397-8200,,,,node,7087455789,https://www.openstreetmap.org/node/7087455789
-Beardmore Hyundai,,,,,,,,,,41.1853539,-95.9319694,,,,,way,190002785,https://www.openstreetmap.org/way/190002785
+Beardmore Hyundai,,,,"Sidney Street, Bellevue, Nebraska 68005",,Sidney Street,Bellevue,Nebraska,68005,41.1853539,-95.9319694,,,,,way,190002785,https://www.openstreetmap.org/way/190002785
 Breeze Auto Sales,,,Used only,"400 West Cornhusker Highway, Lincoln, NE 68521",400,West Cornhusker Highway,Lincoln,NE,68521,40.8359752,-96.7256795,+1-402-413-2191,https://www.breezeautosales.com/,Mo-Sa 09:00-18:00,,way,660070776,https://www.openstreetmap.org/way/660070776
 Bridge Street Auto,,,,"2912 South Locust Street, Grand Island, NE 68801",2912,South Locust Street,Grand Island,NE,68801,40.8928422,-98.3403702,,,,,node,3818179124,https://www.openstreetmap.org/node/3818179124
-Broadway Auto Sales,,,,,,,,,,42.4684362,-96.4282677,,,,,node,8955041895,https://www.openstreetmap.org/node/8955041895
-Bullock,,,,,,,,,,40.8467101,-101.7257844,,,,,way,1393409774,https://www.openstreetmap.org/way/1393409774
+Broadway Auto Sales,,,,"Cornhusker Drive, South Sioux City, Nebraska 68776",,Cornhusker Drive,South Sioux City,Nebraska,68776,42.4684362,-96.4282677,,,,,node,8955041895,https://www.openstreetmap.org/node/8955041895
+Bullock,,,,"8th Street, Grant, Nebraska 69140",,8th Street,Grant,Nebraska,69140,40.8467101,-101.7257844,,,,,way,1393409774,https://www.openstreetmap.org/way/1393409774
 CarMax Auto Superstore,CarMax,,Used only,"17606 Burt Street, Omaha, NE 68118",17606,Burt Street,Omaha,NE,68118,41.2658867,-96.1903698,,https://www.carmax.com/stores/7270,,,way,179060840,https://www.openstreetmap.org/way/179060840
 Cars 4 Less,,,Used only,"2825 North 48th Street, Lincoln, NE 68504",2825,North 48th Street,Lincoln,NE,68504,40.8409876,-96.6544279,,https://www.cars4lessne.com/,,,node,4242543314,https://www.openstreetmap.org/node/4242543314
-Cars For Less,,,Used only,,,,,,,40.8832095,-98.3402614,+1-308-382-2277,https://www.cflgrandisland.com/,,,node,8758746674,https://www.openstreetmap.org/node/8758746674
+Cars For Less,,,Used only,"South Locust Street, Grand Island, Nebraska 68801",,South Locust Street,Grand Island,Nebraska,68801,40.8832095,-98.3402614,+1-308-382-2277,https://www.cflgrandisland.com/,,,node,8758746674,https://www.openstreetmap.org/node/8758746674
 Clock Tower Auto Mall,,,,"805 23rd Street, Columbus 68601",805,23rd Street,Columbus,,68601,41.4380783,-97.3355203,+1 402 563 3602,https://www.clocktowerauto.com/,Mo-Fr 09:00-18:00; Sa 09:00-15:00,,node,2124349197,https://www.openstreetmap.org/node/2124349197
-Copple,,,Both new & used,,,,,,,41.0188724,-95.9077745,,,,,node,10245734898,https://www.openstreetmap.org/node/10245734898
+Copple,,,Both new & used,"Fulton Avenue, Plattsmouth, Nebraska 68048",,Fulton Avenue,Plattsmouth,Nebraska,68048,41.0188724,-95.9077745,,,,,node,10245734898,https://www.openstreetmap.org/node/10245734898
 Cornhusker Auto Center: Chrysler Dodge Jeep Ram,,,,"700 East Norfolk Avenue, Norfolk, NE 68701",700,East Norfolk Avenue,Norfolk,NE,68701,42.0322051,-97.3966136,,,,,way,359227988,https://www.openstreetmap.org/way/359227988
 Cornhusker Auto Center: Chrysler Dodge Jeep Ram,,,,"700 East Norfolk Avenue, Norfolk, NE 68701",700,East Norfolk Avenue,Norfolk,NE,68701,42.0322661,-97.396827,+1-877-798-5012,https://www.cornhuskerautocenter.com/,,,way,359228101,https://www.openstreetmap.org/way/359228101
 Cornhusker International,,,,"3131 Cornhusker Highway, Lincoln, NE 68504",3131,Cornhusker Highway,Lincoln,NE,68504,40.8420039,-96.6758406,+1-402-625-7904,https://www.cornhuskerinternational.com/,Mo-Fr 07:00-18:00; Sa 08:00-12:00,,way,1295545909,https://www.openstreetmap.org/way/1295545909
 Cornhusker Nissan,,,,"307 East Norfolk Avenue, Norfolk, NE 68701",307,East Norfolk Avenue,Norfolk,NE,68701,42.0332164,-97.4029005,+1-888-371-4344,http://cornhuskerautonissan.com,,,way,360442502,https://www.openstreetmap.org/way/360442502
 Courtesy Auto Park,,,Used only,"L Street, Omaha, NE",,L Street,Omaha,NE,,41.2130711,-96.0063452,,,,,way,399589593,https://www.openstreetmap.org/way/399589593
-Cover-Jones Ford Motors,,,,,,,,,,42.0968629,-102.8752944,,,,,node,3119908973,https://www.openstreetmap.org/node/3119908973
+Cover-Jones Ford Motors,,,,"West 3rd Street, Alliance, Nebraska 69301",,West 3rd Street,Alliance,Nebraska,69301,42.0968629,-102.8752944,,,,,node,3119908973,https://www.openstreetmap.org/node/3119908973
 Credit Auto Sales,,,Used only,"3530 South 50th Street, Omaha, NE 68107",3530,South 50th Street,Omaha,NE,68107,41.2266468,-95.9907965,+1-402-345-1244,https://www.creditcarlot.com/,Mo-Sa 09:30-18:00,,way,805819200,https://www.openstreetmap.org/way/805819200
-Dannull Auto Sales,,,,,,,,,,40.4377405,-99.3839886,,,,,node,3825984470,https://www.openstreetmap.org/node/3825984470
-De Anda Auto Sales,,,,,,,,,,42.4690219,-96.4282316,,,,,node,8955041894,https://www.openstreetmap.org/node/8955041894
+Dannull Auto Sales,,,,"West 4th Avenue, Holdrege, Nebraska 68949",,West 4th Avenue,Holdrege,Nebraska,68949,40.4377405,-99.3839886,,,,,node,3825984470,https://www.openstreetmap.org/node/3825984470
+De Anda Auto Sales,,,,"Cornhusker Drive, South Sioux City, Nebraska 68776",,Cornhusker Drive,South Sioux City,Nebraska,68776,42.4690219,-96.4282316,,,,,node,8955041894,https://www.openstreetmap.org/node/8955041894
 Dealin Dj's Car & Truck Sales,,,Used only,"6002 Center Street, Omaha, NE 68106",6002,Center Street,Omaha,NE,68106,41.2381727,-96.0051745,+1-402-553-7729,,Mo-Fr 09:00-18:00; Sa 09:00-17:00,,node,4082408510,https://www.openstreetmap.org/node/4082408510
 Denver Auto Sales,,,Used only,"4925 Cornhusker Highway, Lincoln, NE 68504",4925,Cornhusker Highway,Lincoln,NE,68504,40.8525787,-96.6517719,+1-402-466-5900,https://www.denverautosales.info/,Mo-Fr 08:00-20:00; Sa 09:00-19:00; Su 09:00-21:00,Used Car Sales,node,4242543295,https://www.openstreetmap.org/node/4242543295
-Diers Ford - Lincoln,Ford;Lincoln;Mercury,,,,,,,,,41.4531739,-96.4981996,,,,,way,508588826,https://www.openstreetmap.org/way/508588826
+Diers Ford - Lincoln,Ford;Lincoln;Mercury,,,"North Broad Street, Fremont, Nebraska 68025",,North Broad Street,Fremont,Nebraska,68025,41.4531739,-96.4981996,,,,,way,508588826,https://www.openstreetmap.org/way/508588826
 Dillon's Auto Sales,,,,"6345 North 28th Street, Lincoln, NE 68504",6345,North 28th Street,Lincoln,NE,68504,40.8757884,-96.6806064,,,,,way,197747174,https://www.openstreetmap.org/way/197747174
 Dillon's North Lincoln,,,,"6341 North 28th Street, Lincoln, NE 68504",6341,North 28th Street,Lincoln,NE,68504,40.8755317,-96.6810477,+1-402-477-0009,https://www.dillonsauto.com/,Mo-Th 09:00-19:00; Fr-Sa 09:00-18:00,,way,197747176,https://www.openstreetmap.org/way/197747176
 Dillon's Super Center,,,,"6401 North 28th Street, Lincoln, NE 68504",6401,North 28th Street,Lincoln,NE,68504,40.8766287,-96.681088,+1-402-477-0404,,Mo-Th 09:00-19:00; Fr-Sa 09:00-18:00,,way,197747192,https://www.openstreetmap.org/way/197747192
 Drive Fast USA Auto Sales,,,Used only,"2601 Whitehead Drive, Lincoln, NE 68521",2601,Whitehead Drive,Lincoln,NE,68521,40.8783134,-96.6832013,+1-402-242-6100,https://www.drivefastusa.com,,Used Car Sales,node,5187548570,https://www.openstreetmap.org/node/5187548570
 Durst Motor Company,,,,"140 South 1st Street, Lincoln, NE 68508",140,South 1st Street,Lincoln,NE,68508,40.8128922,-96.7197081,,,,,way,696524702,https://www.openstreetmap.org/way/696524702
-DuTeau,Chevrolet,,,,,,,,,40.7369976,-96.6816447,,,,,way,1013986984,https://www.openstreetmap.org/way/1013986984
-DuTeau Subaru,Subaru,,,,,,,,,40.7289988,-96.6808373,,,,,node,4262158094,https://www.openstreetmap.org/node/4262158094
-Eagle Chevrolet Buick,,,,,,,,,,42.8262359,-103.0191639,,,,,way,463923383,https://www.openstreetmap.org/way/463923383
+DuTeau,Chevrolet,,,"Porter Ridge Road, Lincoln, Nebraska 68512",,Porter Ridge Road,Lincoln,Nebraska,68512,40.7369976,-96.6816447,,,,,way,1013986984,https://www.openstreetmap.org/way/1013986984
+DuTeau Subaru,Subaru,,,"Jamie Lane, Lincoln, Nebraska 68512",,Jamie Lane,Lincoln,Nebraska,68512,40.7289988,-96.6808373,,,,,node,4262158094,https://www.openstreetmap.org/node/4262158094
+Eagle Chevrolet Buick,,,,"West 6th Street, Chadron, Nebraska 69337",,West 6th Street,Chadron,Nebraska,69337,42.8262359,-103.0191639,,,,,way,463923383,https://www.openstreetmap.org/way/463923383
 Edwards Chrysler Jeep Dodge Ram,,,,"17950 Burt Street, Omaha, NE 68118",17950,Burt Street,Omaha,NE,68118,41.2661118,-96.194305,,,,,way,179060844,https://www.openstreetmap.org/way/179060844
-El Tucanazo Auto Sales,,,Used only,,,,,,,40.9303094,-98.3381143,,,,,node,12289139720,https://www.openstreetmap.org/node/12289139720
+El Tucanazo Auto Sales,,,Used only,"East 4th Street, Grand Island, Nebraska 68802",,East 4th Street,Grand Island,Nebraska,68802,40.9303094,-98.3381143,,,,,node,12289139720,https://www.openstreetmap.org/node/12289139720
 Elway Powersports of Lincoln,,,,"6600 North 27th Street, Lincoln, NE 68521",6600,North 27th Street,Lincoln,NE,68521,40.8781692,-96.680617,+1-402-235-6697,https://www.elwaypslincoln.com/,,,way,197740595,https://www.openstreetmap.org/way/197740595
 Exclusive Motors,,,Used only,"6154 L Street, Omaha, NE 68117",6154,L Street,Omaha,NE,68117,41.212753,-96.0083957,+1 402 505 7555,,,,way,932227295,https://www.openstreetmap.org/way/932227295
 Fair Trade Motors LLC,,,,"5504 Center Street, Omaha, NE 68106",5504,Center Street,Omaha,NE,68106,41.2387963,-95.9988521,+1-402-502-2020,https://fairtradeomaha.com/,Mo-Sa 09:00-18:00,,node,7539421799,https://www.openstreetmap.org/node/7539421799
 Fiat of Omaha,Fiat,,Both new & used,"Burt Street, Omaha, NE 68118",,Burt Street,Omaha,NE,68118,41.2641462,-96.1926082,,,,,way,489249993,https://www.openstreetmap.org/way/489249993
 Ford,Ford,,,"Beatrice, NE",,,Beatrice,NE,,40.3095535,-96.7480751,,,,,node,2669513906,https://www.openstreetmap.org/node/2669513906
 Ford,Ford,Hullman's Ford,,"1416 Harlan Street, Falls City, NE 68355",1416,Harlan Street,Falls City,NE,68355,40.0594389,-95.6015801,,,,,node,11301126376,https://www.openstreetmap.org/node/11301126376
-Forrester's Dodge City,,,,,,,,,,41.4219365,-100.1944187,,,,,way,1127926962,https://www.openstreetmap.org/way/1127926962
-Friesen Ford,Ford,,,,,,,,,40.8243287,-97.9987238,,,,,way,1453323614,https://www.openstreetmap.org/way/1453323614
+Forrester's Dodge City,,,,"West 1st Avenue, Arnold, Nebraska 69120",,West 1st Avenue,Arnold,Nebraska,69120,41.4219365,-100.1944187,,,,,way,1127926962,https://www.openstreetmap.org/way/1127926962
+Friesen Ford,Ford,,,"South 16th Street, Aurora, Nebraska 68818",,South 16th Street,Aurora,Nebraska,68818,40.8243287,-97.9987238,,,,,way,1453323614,https://www.openstreetmap.org/way/1453323614
 Gary's Auto Sales,,,Used only,"5351 Cornhusker Highway, Lincoln, NE 68504",5351,Cornhusker Highway,Lincoln,NE,68504,40.8557391,-96.6458223,,,,,way,1305649860,https://www.openstreetmap.org/way/1305649860
-Gateway Motors,,,,,,,,,,41.4021701,-99.6304928,,,,,way,1090218137,https://www.openstreetmap.org/way/1090218137
+Gateway Motors,,,,"South 1st Avenue, Broken Bow, Nebraska 68822",,South 1st Avenue,Broken Bow,Nebraska,68822,41.4021701,-99.6304928,,,,,way,1090218137,https://www.openstreetmap.org/way/1090218137
 Gene Steffy Chrysler Jeep Dodge,,,,"2545 East 23rd Street, Fremont 68025",2545,East 23rd Street,Fremont,,68025,41.4506176,-96.4647917,,https://www.genesteffy.com/,,,node,3814845640,https://www.openstreetmap.org/node/3814845640
 Gil's Auto Sales,,,Used only,"5029 Center Street, Omaha, NE 68106",5029,Center Street,Omaha,NE,68106,41.2411799,-95.991224,+1-402-991-0024,https://autosalesne.com/,Mo-Fr 09:00-18:00,,way,806645779,https://www.openstreetmap.org/way/806645779
-GMC,GMC,,,,,,,,,42.8291368,-103.0212616,,,,,way,463924134,https://www.openstreetmap.org/way/463924134
+GMC,GMC,,,"Frontage Road North, Chadron, Nebraska 69337",,Frontage Road North,Chadron,Nebraska,69337,42.8291368,-103.0212616,,,,,way,463924134,https://www.openstreetmap.org/way/463924134
 Gorges Volvo,,,,"17665 Burt Street, Omaha, NE 68118",17665,Burt Street,Omaha,NE,68118,41.2641661,-96.1912648,,,,,way,179060839,https://www.openstreetmap.org/way/179060839
 Greenwood Auto Sales,,,Used only,"3010 Cornhusker Highway, Lincoln, NE 68504",3010,Cornhusker Highway,Lincoln,NE,68504,40.8431001,-96.6756792,+1-402-347-2925,https://www.greenwoodautodeals.com,Mo-Su 10:00-19:00,,way,992029316,https://www.openstreetmap.org/way/992029316
 Gregg Young Chevrolet,,,,"17750 Burt Street, Omaha, NE 68118",17750,Burt Street,Omaha,NE,68118,41.2658732,-96.1926059,,,,,way,179060837,https://www.openstreetmap.org/way/179060837
@@ -82,202 +82,202 @@ Gretna Auto Outlet,,,,"11808 Standing Stone Drive, Gretna, NE 68028",11808,Stand
 Gretna Auto Outlet,,,Used only,"12190 S 216 Plaza, Gretna, NE 68028",12190,S 216 Plaza,Gretna,NE,68028,41.1265085,-96.2543357,+1-402-332-5868,,Mo-Th 09:00-20:00; Fr-Sa 09:00-19:00; Su 11:00-16:00,,way,958685750,https://www.openstreetmap.org/way/958685750
 Grover Street Auto Sales,,,Used only,"6328 Grover Street, Omaha, NE 68106",6328,Grover Street,Omaha,NE,68106,41.2272819,-96.0099436,+1-402-932-7776,https://groverstreetauto.com/,Mo-Fr 09:00-17:30,,node,7535568239,https://www.openstreetmap.org/node/7535568239
 H & H Chevrolet,,,,"4645 South 84th Street, Omaha, NE 68127",4645,South 84th Street,Omaha,NE,68127,41.2135026,-96.0421396,,,,,way,266643360,https://www.openstreetmap.org/way/266643360
-H+H Chevrolet of Omaha,Chevrolet,,,,,,,,,41.1514823,-96.1500469,,,,,way,1185102263,https://www.openstreetmap.org/way/1185102263
-H+H Chrysler Dodge Jeep Ram of Omaha,Chrysler,H+H,Both new & used,,,,,,,41.1495106,-96.1476152,,,,,way,1009974463,https://www.openstreetmap.org/way/1009974463
+H+H Chevrolet of Omaha,Chevrolet,,,"South 150th Street, Richland VIII Precinct, Nebraska 68138",,South 150th Street,Richland VIII Precinct,Nebraska,68138,41.1514823,-96.1500469,,,,,way,1185102263,https://www.openstreetmap.org/way/1185102263
+H+H Chrysler Dodge Jeep Ram of Omaha,Chrysler,H+H,Both new & used,"Crest Road, Richland VIII Precinct, Nebraska 68138",,Crest Road,Richland VIII Precinct,Nebraska,68138,41.1495106,-96.1476152,,,,,way,1009974463,https://www.openstreetmap.org/way/1009974463
 Harvest Auto Family,,,Used only,"3214 Ponderosa Street, Wahoo, NE 68066",3214,Ponderosa Street,Wahoo,NE,68066,41.2365972,-96.6006575,+1-402-277-5080,https://www.driveharvest.com,Mo-Fr 09:00-17:00; Sa 09:00-15:00,,node,13983578176,https://www.openstreetmap.org/node/13983578176
-Hastings Ford & Lincoln,,,,,,,,,,40.617149,-98.3853313,,,,,node,3823986904,https://www.openstreetmap.org/node/3823986904
-Henry Motors,,,,"1402 South 11th Street, 68401",1402,South 11th Street,,,68401,40.6645806,-95.859812,,,,,way,207821485,https://www.openstreetmap.org/way/207821485
-Honda Cars of Bellevue,Honda,,,,,,,,,41.1680373,-95.9271576,,,,,way,548779983,https://www.openstreetmap.org/way/548779983
+Hastings Ford & Lincoln,,,,"North Shore Drive, Hastings, Nebraska 68902",,North Shore Drive,Hastings,Nebraska,68902,40.617149,-98.3853313,,,,,node,3823986904,https://www.openstreetmap.org/node/3823986904
+Henry Motors,,,,"1402 South 11th Street, Nebraska City, Nebraska 68401",1402,South 11th Street,Nebraska City,Nebraska,68401,40.6645806,-95.859812,,,,,way,207821485,https://www.openstreetmap.org/way/207821485
+Honda Cars of Bellevue,Honda,,,"Fort Crook West Frontage Road, Bellevue, Nebraska 68005",,Fort Crook West Frontage Road,Bellevue,Nebraska,68005,41.1680373,-95.9271576,,,,,way,548779983,https://www.openstreetmap.org/way/548779983
 Honda of Lincoln,Honda,,,"2770 Yankee Hill Road, Lincoln, NE 68516",2770,Yankee Hill Road,Lincoln,NE,68516,40.7272085,-96.6807307,,,,,node,4231375835,https://www.openstreetmap.org/node/4231375835
 Huber Cadillac,,,,"11102 West Dodge Road, Omaha, NE 68154",11102,West Dodge Road,Omaha,NE,68154,41.2646528,-96.0873934,+1-402-403-4939,http://www.hubercadillac.net,,,node,4115541047,https://www.openstreetmap.org/node/4115541047
 Huber Chevrolet,,,,"11102 West Dodge Road, Omaha, NE 68154",11102,West Dodge Road,Omaha,NE,68154,41.2644552,-96.0887855,+1-402-496-0220,https://www.hubercars.net/,,,node,4115541053,https://www.openstreetmap.org/node/4115541053
 Husker Auto Group Pre-Owned,,,Used only,"6740 Telluride Drive, Lincoln, NE 68521",6740,Telluride Drive,Lincoln,NE,68521,40.8793923,-96.6826193,,https://www.huskerchevrolet.com/,,,node,5187548649,https://www.openstreetmap.org/node/5187548649
 Husker Chevrolet and Cadillac,,,,"6833 Telluride Drive, Lincoln, NE 68521",6833,Telluride Drive,Lincoln,NE,68521,40.8804954,-96.6840221,,,,,node,5187548657,https://www.openstreetmap.org/node/5187548657
 Jacobs Ford and RV,,Jacobs Family,Both new & used,"303 2nd Street, Saint Paul, NE 68873",303,2nd Street,Saint Paul,NE,68873,41.2089397,-98.4518308,,https://www.jacobsford.com/,08:00-18:00,,node,4736300932,https://www.openstreetmap.org/node/4736300932
-Janssen & Sons Ford,Ford,,,,,,,,,40.4373424,-99.3882613,,,,,node,3825937254,https://www.openstreetmap.org/node/3825937254
-Jerry Spady,,,,,,,,,,40.6129873,-98.3807662,,,,,node,3824090340,https://www.openstreetmap.org/node/3824090340
-John's Ford,Ford,,,,,,,,,40.4923207,-98.9525097,,,,,node,3827980397,https://www.openstreetmap.org/node/3827980397
-John's Used Deere Store,,,Used only,"675 Madison Street, 68317",675,Madison Street,,,68317,40.679221,-96.5080121,,,,,way,200557599,https://www.openstreetmap.org/way/200557599
-Johnny Dodge,Dodge,,,,,,,,,42.1370335,-98.0438472,,,,General repairs; New Car Sales; Used Car Sales,way,657279791,https://www.openstreetmap.org/way/657279791
+Janssen & Sons Ford,Ford,,,"US Highway 6 & 34, Holdrege, Nebraska 68949",,US Highway 6 & 34,Holdrege,Nebraska,68949,40.4373424,-99.3882613,,,,,node,3825937254,https://www.openstreetmap.org/node/3825937254
+Jerry Spady,,,,"East 26th Street, Hastings, Nebraska 68902",,East 26th Street,Hastings,Nebraska,68902,40.6129873,-98.3807662,,,,,node,3824090340,https://www.openstreetmap.org/node/3824090340
+John's Ford,Ford,,,"West Brewster Avenue, Minden, Nebraska 68959",,West Brewster Avenue,Minden,Nebraska,68959,40.4923207,-98.9525097,,,,,node,3827980397,https://www.openstreetmap.org/node/3827980397
+John's Used Deere Store,,,Used only,"675 Madison Street, Bennet, Nebraska 68317",675,Madison Street,Bennet,Nebraska,68317,40.679221,-96.5080121,,,,,way,200557599,https://www.openstreetmap.org/way/200557599
+Johnny Dodge,Dodge,,,"Highway 275, Neligh, Nebraska 68756",,Highway 275,Neligh,Nebraska,68756,42.1370335,-98.0438472,,,,General repairs; New Car Sales; Used Car Sales,way,657279791,https://www.openstreetmap.org/way/657279791
 JPK Investment Motors,,,Used only,"2244 North Cotner Boulevard, Lincoln, NE 68505",2244,North Cotner Boulevard,Lincoln,NE,68505,40.8349282,-96.6300593,+1-402-466-7744,https://www.jpkinvestmentmotors.com/,"Mo-Fr 08:00-17:30, Sa 08:00-16:00",,way,1353744023,https://www.openstreetmap.org/way/1353744023
 JT Auto Sales,,,Used only,"3750 Cornhusker Highway, Lincoln, NE 68504",3750,Cornhusker Highway,Lincoln,NE,68504,40.8449645,-96.6668961,+1-402-316-1505,,Mo-Sa 10:00-18:00,Used Car Sales,node,12031968470,https://www.openstreetmap.org/node/12031968470
-Jubba Auto Sales,,,,,,,,,,40.9159829,-98.3603795,,,,,node,3818179101,https://www.openstreetmap.org/node/3818179101
+Jubba Auto Sales,,,,"West 2nd Street, Grand Island, Nebraska 68802",,West 2nd Street,Grand Island,Nebraska,68802,40.9159829,-98.3603795,,,,,node,3818179101,https://www.openstreetmap.org/node/3818179101
 Kia of Lincoln,Kia,,Used only,"1021 North 48th Street, Lincoln, NE 68503",1021,North 48th Street,Lincoln,NE,68503,40.8237354,-96.6544547,,,,,node,4242543342,https://www.openstreetmap.org/node/4242543342
 Kia of Lincoln,Kia,,Both new & used,"1145 North 48th Street, Lincoln, NE 68504",1145,North 48th Street,Lincoln,NE,68504,40.824927,-96.6544181,+1-531-229-1300,https://www.kiaoflincoln.com/,,,way,903814756,https://www.openstreetmap.org/way/903814756
 Kick Kars,,,Used only,"1224 Broadway, Scottsbluff, NE 69361",1224,Broadway,Scottsbluff,NE,69361,41.8591139,-103.6631403,+1-308-223-2816,https://www.kickkars.com/,,,way,514907470,https://www.openstreetmap.org/way/514907470
-King of Kars,,,,,,,,,,40.4887367,-98.9523756,,,,,node,3827980368,https://www.openstreetmap.org/node/3827980368
-Lashley Auto Sales,,,,,,,,,,41.8740292,-103.6722168,,,,,way,803489837,https://www.openstreetmap.org/way/803489837
-Lee Janssen Chevrolet,Chevrolet,,,,,,,,,40.4333125,-99.3958305,,,,,node,3825930319,https://www.openstreetmap.org/node/3825930319
+King of Kars,,,,"West Saint Clair Street, Minden, Nebraska 68959",,West Saint Clair Street,Minden,Nebraska,68959,40.4887367,-98.9523756,,,,,node,3827980368,https://www.openstreetmap.org/node/3827980368
+Lashley Auto Sales,,,,"West 27th Street, Scottsbluff, Nebraska 69361",,West 27th Street,Scottsbluff,Nebraska,69361,41.8740292,-103.6722168,,,,,way,803489837,https://www.openstreetmap.org/way/803489837
+Lee Janssen Chevrolet,Chevrolet,,,"US Highway 6 & 34, Holdrege, Nebraska 68949",,US Highway 6 & 34,Holdrege,Nebraska,68949,40.4333125,-99.3958305,,,,,node,3825930319,https://www.openstreetmap.org/node/3825930319
 Lee Sapp Ford,,,,"1602 Silver Street, Ashland, NE 68003",1602,Silver Street,Ashland,NE,68003,41.0394214,-96.3711112,+1-402-944-3367,https://www.lsford.com/,"Mo,We,Fr 07:00-18:00; Tu,Th 07:00-19:00; Sa 07:00-14:00",,node,357790836,https://www.openstreetmap.org/node/357790836
 Lee's Auto Sales,,,Used only,"4712 Madison Avenue, Lincoln, NE 68504",4712,Madison Avenue,Lincoln,NE,68504,40.8404963,-96.6545418,,,,,node,12648382057,https://www.openstreetmap.org/node/12648382057
 Lexus of Lincoln,Lexus,,Both new & used,"8585 South 37th Street, Lincoln, NE 68516",8585,South 37th Street,Lincoln,NE,68516,40.7252996,-96.6686093,+14024773233,https://www.lexusoflincoln.com/,,A/C; Batteries; Brakes; Parts; General repairs; Diagnostics; Electrical; Glass; Inspection; Motor; New Car Sales; Oil change; Transmission; Tires; Used Car Sales,way,971262163,https://www.openstreetmap.org/way/971262163
 M & M Auto Sales,,,Both new & used,"1840 Cornhusker Highway, Lincoln, NE 68521",1840,Cornhusker Highway,Lincoln,NE,68521,40.8431691,-96.6940049,+1-402-419-9382,https://www.mmautosaleslincoln.com/,Mo-Sa 10:00-18:30,,node,4243896841,https://www.openstreetmap.org/node/4243896841
-Maddox,,,,,,,,,,41.1178527,-102.9570349,,,,,node,13004584122,https://www.openstreetmap.org/node/13004584122
+Maddox,,,,"Glover Street, Sidney, Nebraska 69162",,Glover Street,Sidney,Nebraska,69162,41.1178527,-102.9570349,,,,,node,13004584122,https://www.openstreetmap.org/node/13004584122
 Mercedes-Benz,Mercedes-Benz,,Both new & used,"14335 Hillsdale Avenue, Omaha, NE 68137",14335,Hillsdale Avenue,Omaha,NE,68137,41.2142572,-96.1379381,,,,,way,454952433,https://www.openstreetmap.org/way/454952433
-Midway Chevrolet Buick Cadillac,Chevrolet;Buick;Cadillac,,,,,,,,,40.679545,-99.0834918,,,,,node,1005399615,https://www.openstreetmap.org/node/1005399615
+Midway Chevrolet Buick Cadillac,Chevrolet;Buick;Cadillac,,,"East 2nd Avenue, Kearney, Nebraska 68849",,East 2nd Avenue,Kearney,Nebraska,68849,40.679545,-99.0834918,,,,,node,1005399615,https://www.openstreetmap.org/node/1005399615
 Midway Chrysler Dodge Jeep Ram Dealership,Chrysler;Dodge;Jeep;Ram,,,"219 2nd Avenue, Kearney, NE 68847",219,2nd Avenue,Kearney,NE,68847,40.675163,-99.0841195,,,,,node,3830211663,https://www.openstreetmap.org/node/3830211663
 Mike's Auto Sales,,,,"1020 Diamond Street, Lyons, NE 68038",1020,Diamond Street,Lyons,NE,68038,41.9330707,-96.4642132,+1-402-687-2279,,,,node,6399867817,https://www.openstreetmap.org/node/6399867817
 Millenium Autos,,B & J Partnership Lto,,"1400 Saltillo Road, Lincoln, NE 68430",1400,Saltillo Road,Lincoln,NE,68430,40.6977642,-96.7018073,,,,,way,1009321105,https://www.openstreetmap.org/way/1009321105
-Miller's Auto Sales,,,,,,,,,,41.4520897,-96.476627,,,,,node,3814821503,https://www.openstreetmap.org/node/3814821503
+Miller's Auto Sales,,,,"East 23rd Avenue North, Fremont, Nebraska 68025",,East 23rd Avenue North,Fremont,Nebraska,68025,41.4520897,-96.476627,,,,,node,3814821503,https://www.openstreetmap.org/node/3814821503
 Moody Motor Company,,,,"251 Spruce Avenue, Niobrara, NE 68760",251,Spruce Avenue,Niobrara,NE,68760,42.7510872,-98.0346985,+1-800-745-5650; +1-402-857-3711,https://www.moodymotor.com/,Mo-Fr 08:00-17:30; Sa 08:00-16:00; Su closed,,node,6711009640,https://www.openstreetmap.org/node/6711009640
-Morrie's Bellevue Subaru,,,,410 Fort Crook Road North,410,Fort Crook Road North,,,,41.1653755,-95.9268129,,,,,way,189994643,https://www.openstreetmap.org/way/189994643
+Morrie's Bellevue Subaru,,,,"410 Fort Crook Road North, Bellevue, Nebraska 68005",410,Fort Crook Road North,Bellevue,Nebraska,68005,41.1653755,-95.9268129,,,,,way,189994643,https://www.openstreetmap.org/way/189994643
 MSAS Used Car Superstore,,,Used only,"703 West 2nd Street, Grand Island, NE 68801",703,West 2nd Street,Grand Island,NE,68801,40.9218995,-98.3459725,+1-308-384-3073,http://msasauto.com/,,,node,1316621192,https://www.openstreetmap.org/node/1316621192
 Mullin Motors,,,Used only,"1631 O Street, Lincoln, NE 68508",1631,O Street,Lincoln,NE,68508,40.813141,-96.6973064,+1-402-413-2125,https://mikemullinmotors.com/,Mo-Th 10:00-19:00; Fr 10:00-18:00; Sa 10:00-16:00,,way,605833776,https://www.openstreetmap.org/way/605833776
 Murphy Motors,,Murphy Motors Inc,Used only,"616 West Cornhusker Highway, Lincoln, NE 68521",616,West Cornhusker Highway,Lincoln,NE,68521,40.8359489,-96.7285653,+1-402-742-0230,https://murphymotorslincoln.com/index.jsp,Mo-Fr 09:00-17:00; Sa 10:00-15:00,,way,1238927423,https://www.openstreetmap.org/way/1238927423
 Nebraska Auto Sales,,,Used only,"6022 L Street, Omaha, NE",6022,L Street,Omaha,NE,,41.2128792,-96.0057074,+1 402 731 2198,,,,node,8641821846,https://www.openstreetmap.org/node/8641821846
 Nebraska Auto Sales,,,Used only,"6052 L Street, Omaha, NE 68117",6052,L Street,Omaha,NE,68117,41.2128716,-96.007221,+1 402 933 7827,,,,way,399584345,https://www.openstreetmap.org/way/399584345
-Nielsen Auto Sales,,,,,,,,,,41.2775506,-96.0140105,+1 402 5563513,,,,node,8913486223,https://www.openstreetmap.org/node/8913486223
+Nielsen Auto Sales,,,,"6535 Blondo Street, Omaha, Nebraska 68164",6535,Blondo Street,Omaha,Nebraska,68164,41.2775506,-96.0140105,+1 402 5563513,,,,node,8913486223,https://www.openstreetmap.org/node/8913486223
 Nissan of Omaha,Nissan,Nissan,,"17410 Burt Street, Omaha, NE 68118",17410,Burt Street,Omaha,NE,68118,41.2650155,-96.1878106,+1-402-493-4000,,,,way,489252708,https://www.openstreetmap.org/way/489252708
 O'Daniel Honda,,,,"123 Beverly Drive, Omaha, NE 68114",123,Beverly Drive,Omaha,NE,68114,41.2587152,-96.035062,,,,,way,186078917,https://www.openstreetmap.org/way/186078917
 Omaha Car Stop,,,Used only,"2707 South 156th Street, Omaha, NE 68130",2707,South 156th Street,Omaha,NE,68130,41.2332938,-96.1578126,+1 402 932 1888,https://omahacarstop.com/,,,way,1104358410,https://www.openstreetmap.org/way/1104358410
 Omaha Motorsports,,,,"5504 Center Street, Omaha, NE 68106",5504,Center Street,Omaha,NE,68106,41.2388315,-95.9988645,+1-402-359-1739,https://omahaautosforsale.com/,Mo-Fr 10:00-18:00; Sa 10:00-15:00,,node,4082424937,https://www.openstreetmap.org/node/4082424937
 ONYX Automotive,,,,"14800 Davenport Street, Omaha, NE 68154",14800,Davenport Street,Omaha,NE,68154,41.2618526,-96.1450504,,https://www.onyxautomotive.com/,,,way,700736880,https://www.openstreetmap.org/way/700736880
 ONYX Automotive,,,,"14800 Davenport Street, Omaha, NE 68154",14800,Davenport Street,Omaha,NE,68154,41.2619001,-96.1449124,,https://www.onyxautomotive.com/,,,way,762960420,https://www.openstreetmap.org/way/762960420
-Panhandle Auto Group Scottsbluff,,,,,,,,,,41.8655765,-103.6392358,,,,,way,463881856,https://www.openstreetmap.org/way/463881856
-Paul Spady,,,,,,,,,,40.6140664,-98.3811524,,,,,node,3823986882,https://www.openstreetmap.org/node/3823986882
-Paul Spady,,,,,,,,,,40.6148117,-98.3814045,,,,,node,3823986903,https://www.openstreetmap.org/node/3823986903
+Panhandle Auto Group Scottsbluff,,,,"Portal Place, Scottsbluff, Nebraska 69361",,Portal Place,Scottsbluff,Nebraska,69361,41.8655765,-103.6392358,,,,,way,463881856,https://www.openstreetmap.org/way/463881856
+Paul Spady,,,,"Osborne Drive East, Hastings, Nebraska 68902",,Osborne Drive East,Hastings,Nebraska,68902,40.6140664,-98.3811524,,,,,node,3823986882,https://www.openstreetmap.org/node/3823986882
+Paul Spady,,,,"Osborne Drive East, Hastings, Nebraska 68902",,Osborne Drive East,Hastings,Nebraska,68902,40.6148117,-98.3814045,,,,,node,3823986903,https://www.openstreetmap.org/node/3823986903
 Peterbuilt of Lincoln,Peterbuilt,,,"6262 Arbor Road, Lincoln, NE 68517",6262,Arbor Road,Lincoln,NE,68517,40.8957133,-96.6349043,+1-402-858-8400,https://www.pbtruck.com/Lincoln/,,Parts; General repairs,way,660675112,https://www.openstreetmap.org/way/660675112
 Platte Valley Auto Group,,,,"4210 2nd Avenue, Kearney, NE 68845",4210,2nd Avenue,Kearney,NE,68845,40.7166826,-99.0849031,,,,Used Car Sales,way,828285020,https://www.openstreetmap.org/way/828285020
-Plaza Buick GMC,,,,"11911 I Street, 68137",11911,I Street,,,68137,41.2152493,-96.0993773,,http://www.plazaomaha.com,,,way,183941623,https://www.openstreetmap.org/way/183941623
+Plaza Buick GMC,,,,"11911 I Street, Omaha, Nebraska 68137",11911,I Street,Omaha,Nebraska,68137,41.2152493,-96.0993773,,http://www.plazaomaha.com,,,way,183941623,https://www.openstreetmap.org/way/183941623
 Pony Express Chevrolet-Buick,,,,"420 Lake Avenue, Gothenburg, NE 69138",420,Lake Avenue,Gothenburg,NE,69138,40.9238912,-100.1657238,+1-308-537-3671,https://www.ponyexpresschevy.com/,,,node,3861906970,https://www.openstreetmap.org/node/3861906970
-Railway Auto Sales,,,,,,,,,,41.8627308,-103.6662282,,,,,way,1296753505,https://www.openstreetmap.org/way/1296753505
-Ranchland Ford,,,,,,,,,,41.4011039,-99.6197289,,,,,way,1409642398,https://www.openstreetmap.org/way/1409642398
+Railway Auto Sales,,,,"West Railway Street, Scottsbluff, Nebraska 69361",,West Railway Street,Scottsbluff,Nebraska,69361,41.8627308,-103.6662282,,,,,way,1296753505,https://www.openstreetmap.org/way/1296753505
+Ranchland Ford,,,,"South E Street, Broken Bow, Nebraska 68822",,South E Street,Broken Bow,Nebraska,68822,41.4011039,-99.6197289,,,,,way,1409642398,https://www.openstreetmap.org/way/1409642398
 Randy's Auto Sales,,,,"1407 West 2nd Street, Grand Island, NE 68801",1407,West 2nd Street,Grand Island,NE,68801,40.9185813,-98.3539636,+1-308-381-7566,https://www.randysautosalesgi.com/,,,node,3818179296,https://www.openstreetmap.org/node/3818179296
 Ray's Auto Sales,,,,"420 East 4th Street, Superior, NE 68978",420,East 4th Street,Superior,NE,68978,40.0202213,-98.0671426,+1 402-879-4287,https://raysautosalesne.com/,,,node,6012846174,https://www.openstreetmap.org/node/6012846174
-Reganis Chrysler,,,,,,,,,,41.874902,-103.6477452,,,,,way,1431872720,https://www.openstreetmap.org/way/1431872720
+Reganis Chrysler,,,,"12th Avenue, Scottsbluff, Nebraska 69361",,12th Avenue,Scottsbluff,Nebraska,69361,41.874902,-103.6477452,,,,,way,1431872720,https://www.openstreetmap.org/way/1431872720
 Reganis Honda,Honda,,,"1117 East 27th Street, Scottsbluff, NE 69361",1117,East 27th Street,Scottsbluff,NE,69361,41.8748466,-103.6489606,,,,,way,812966658,https://www.openstreetmap.org/way/812966658
-Riverside Chevrolet,,,,,,,,,,40.1348564,-97.1781643,,,,,way,474029915,https://www.openstreetmap.org/way/474029915
+Riverside Chevrolet,,,,"4th Street, Fairbury, Nebraska 68352",,4th Street,Fairbury,Nebraska,68352,40.1348564,-97.1781643,,,,,way,474029915,https://www.openstreetmap.org/way/474029915
 Robb's Truck Sales,,,,"2811 South Locust Street, Grand Island, NE 68801",2811,South Locust Street,Grand Island,NE,68801,40.8941694,-98.3392699,,,,,node,8758746827,https://www.openstreetmap.org/node/8758746827
-RS Auto Sales,,,,,,,,,,41.8570853,-103.6758516,,,,,way,1239267876,https://www.openstreetmap.org/way/1239267876
+RS Auto Sales,,,,"Avenue I, Scottsbluff, Nebraska 69361",,Avenue I,Scottsbluff,Nebraska,69361,41.8570853,-103.6758516,,,,,way,1239267876,https://www.openstreetmap.org/way/1239267876
 Sabah Tire and Auto Sales,,,Used only,"140 West Cornhusker Highway, Lincoln, NE 68521",140,West Cornhusker Highway,Lincoln,NE,68521,40.8358896,-96.72245,+1-402-475-6290,https://sabahauto.com/,Mo-Sa 09:00-17:00,,way,1382990504,https://www.openstreetmap.org/way/1382990504
 Sanders Auto Sales,,,,"1846 Holdrege Street, Lincoln, NE 68503",1846,Holdrege Street,Lincoln,NE,68503,40.8283742,-96.6935984,,,,,way,1274601213,https://www.openstreetmap.org/way/1274601213
 Schalk Auto Inc.,,,Used only,"305 South 3rd Street, Albion, NE 68620",305,South 3rd Street,Albion,NE,68620,41.6906434,-97.9993655,+1-402-395-2195,,Monday	8:00 AM - 5:00 PM Tuesday	8:00 AM - 5:00 PM Wednesday	8:00 AM - 5:00 PM Thursday	8:00 AM - 5:00 PM Friday	8:00 AM - 5:00 PM Saturday	8:00 AM - 12:00 PM Sunday	Closed,,way,1530487387,https://www.openstreetmap.org/way/1530487387
 Schworer Volkswagen,Volkswagen,,Both new & used,"3301 Schworer Drive, Lincoln, NE 68504",3301,Schworer Drive,Lincoln,NE,68504,40.8591633,-96.6700539,+1-402-524-4958,https://www.schworervolkswagen.com/,,Diagnostics; New Car Sales; Oil change; General repairs; Used Car Sales,way,197624398,https://www.openstreetmap.org/way/197624398
-Sid Dillon,Buick,,,,,,,,,40.7364458,-96.6843563,,,,,node,4262157870,https://www.openstreetmap.org/node/4262157870
-Sid Dillon,Nissan,,,,,,,,,40.735893,-96.6842796,,,,,node,4262158200,https://www.openstreetmap.org/node/4262158200
+Sid Dillon,Buick,,,"Kendra Lane, Lincoln, Nebraska 68512",,Kendra Lane,Lincoln,Nebraska,68512,40.7364458,-96.6843563,,,,,node,4262157870,https://www.openstreetmap.org/node/4262157870
+Sid Dillon,Nissan,,,"Kendra Lane, Lincoln, Nebraska 68512",,Kendra Lane,Lincoln,Nebraska,68512,40.735893,-96.6842796,,,,,node,4262158200,https://www.openstreetmap.org/node/4262158200
 Sid Dillon,,,Used only,"5730 O Street, Lincoln, NE 68510",5730,O Street,Lincoln,NE,68510,40.8137737,-96.6427972,,https://www.siddillon.com/sid-dillon-o-street-lincoln/,,,way,696752891,https://www.openstreetmap.org/way/696752891
-Sid Dillon Buick GMC Cadillac,,,,,,,,,,41.4521535,-96.4666907,,,,,node,3814845651,https://www.openstreetmap.org/node/3814845651
-Sid Dillon Chevrolet,,,,,,,,,,41.4522058,-96.464384,,,,,node,3814845637,https://www.openstreetmap.org/node/3814845637
+Sid Dillon Buick GMC Cadillac,,,,"East 23rd Avenue North, Fremont, Nebraska 68025",,East 23rd Avenue North,Fremont,Nebraska,68025,41.4521535,-96.4666907,,,,,node,3814845651,https://www.openstreetmap.org/node/3814845651
+Sid Dillon Chevrolet,,,,"East 23rd Avenue North, Fremont, Nebraska 68025",,East 23rd Avenue North,Fremont,Nebraska,68025,41.4522058,-96.464384,,,,,node,3814845637,https://www.openstreetmap.org/node/3814845637
 Sid Dillon Chevrolet Buick,Chevrolet,,,"1750 County Road J, Wahoo, NE 68066",1750,County Road J,Wahoo,NE,68066,41.1939987,-96.6326777,+1-402-817-1699,https://www.siddillonwahoo.com/,"Mo, Tu, Th 08:00-19:00; We, Fr 08:00-18:00; Sa 08:00-17:00",Oil change; Rental,way,804442906,https://www.openstreetmap.org/way/804442906
 Sid Dillon Ford,,,,"257 West A Street, Wahoo, NE 68066",257,West A Street,Wahoo,NE,68066,41.2045077,-96.6220948,+1-402-443-4240,https://www.siddillonford.com/,"Mo, Tu, Th 08:00-19:00; We, Fr 08:00-18:00; Sa 08:00-17:00",,way,804442898,https://www.openstreetmap.org/way/804442898
 Sid Dillon Hyundai,Hyundai,,,"8350 South 40th Street, Lincoln, NE 68516",8350,South 40th Street,Lincoln,NE,68516,40.727096,-96.6623872,,,,,way,1343820567,https://www.openstreetmap.org/way/1343820567
-Sid Dillon Mazda,,,,,,,,,,41.4522862,-96.466122,,,,,node,3814845631,https://www.openstreetmap.org/node/3814845631
+Sid Dillon Mazda,,,,"East 23rd Avenue North, Fremont, Nebraska 68025",,East 23rd Avenue North,Fremont,Nebraska,68025,41.4522862,-96.466122,,,,,node,3814845631,https://www.openstreetmap.org/node/3814845631
 Skillman Auto Sales,,,Used only,"6910 Southwest 91st Street, Denton, NE 68339",6910,Southwest 91st Street,Denton,NE,68339,40.742354,-96.8435916,,,,,node,10771039395,https://www.openstreetmap.org/node/10771039395
 Small Change Auto Sales,,,,"915 West 2nd Street, Grand Island, NE 68801",915,West 2nd Street,Grand Island,NE,68801,40.9208825,-98.3487144,,,,,way,549241222,https://www.openstreetmap.org/way/549241222
-Sonny Gerber Auto Sales,,,,"4519 Cuming Street, 68132",4519,Cuming Street,,,68132,41.2674644,-95.9810122,,,,,way,186983188,https://www.openstreetmap.org/way/186983188
-Spady New & Used Cars,,,Used only,,,,,,,40.4381918,-99.3736378,,,,,node,3826007070,https://www.openstreetmap.org/node/3826007070
+Sonny Gerber Auto Sales,,,,"4519 Cuming Street, Omaha, Nebraska 68132",4519,Cuming Street,Omaha,Nebraska,68132,41.2674644,-95.9810122,,,,,way,186983188,https://www.openstreetmap.org/way/186983188
+Spady New & Used Cars,,,Used only,"4th Avenue, Holdrege, Nebraska 68949",,4th Avenue,Holdrege,Nebraska,68949,40.4381918,-99.3736378,,,,,node,3826007070,https://www.openstreetmap.org/node/3826007070
 Star City Auto Sales,,,Used only,"3101 Cornhusker Highway, Lincoln, NE 68504",3101,Cornhusker Highway,Lincoln,NE,68504,40.8422353,-96.6765755,+1-402-383-1502,,Mo-Fr 11:00-18:00; Sa 11:00-17:00,General repairs; Used Car Sales,way,1295545912,https://www.openstreetmap.org/way/1295545912
 Superior Honda of Omaha,,,,"4111 South 144th Street, Omaha, NE 68137",4111,South 144th Street,Omaha,NE,68137,41.2188776,-96.1375769,,,,,way,241026352,https://www.openstreetmap.org/way/241026352
 Superior Van & Mobility,,,,"11147 Mockingbird Drive, Omaha, NE 68137",11147,Mockingbird Drive,Omaha,NE,68137,41.2072376,-96.0872763,,,,,node,8821774764,https://www.openstreetmap.org/node/8821774764
 Swanson Ford,,,,"305 2nd Street, Ceresco 68017",305,2nd Street,Ceresco,,68017,41.0580555,-96.6446468,,,,,way,220415014,https://www.openstreetmap.org/way/220415014
-Swanson Ford Garage,,,,,,,,,,41.0581119,-96.6454083,,,,,way,220415015,https://www.openstreetmap.org/way/220415015
-Team,,,,,,,,,,41.8644,-103.6374327,,,,,way,803489895,https://www.openstreetmap.org/way/803489895
+Swanson Ford Garage,,,,"Beech Street, Ceresco, Nebraska 68017",,Beech Street,Ceresco,Nebraska,68017,41.0581119,-96.6454083,,,,,way,220415015,https://www.openstreetmap.org/way/220415015
+Team,,,,"Cross Road, Scottsbluff, Nebraska 69361",,Cross Road,Scottsbluff,Nebraska,69361,41.8644,-103.6374327,,,,,way,803489895,https://www.openstreetmap.org/way/803489895
 Terry's Body Shop & Sales,,,,"14041 Highway 6, Waverly, NE 68462",14041,Highway 6,Waverly,NE,68462,40.9150291,-96.5299271,+1-402-786-5444,,,,way,198996378,https://www.openstreetmap.org/way/198996378
 The Internet Car Lot,Independent,"The Internet Car Lot, Inc.",Both new & used,"7150 P Circle, Omaha, NE 68117",7150,P Circle,Omaha,NE,68117,41.2078399,-96.0229203,+1-402-991-1112,,Mo-Sa 09:00-18:00,A/C; Alignment; Batteries; Body work; Brakes; General repairs; Diagnostics; Electrical; Inspection; Muffler; Oil change; Painting; Transmission; Truck Repair; Tires; Used Car Sales,node,11653340290,https://www.openstreetmap.org/node/11653340290
 The Internet Car Lot,Independent,"The Internet Car Lot, Inc.",Both new & used,"7150 P Circle, Omaha, NE 68117",7150,P Circle,Omaha,NE,68117,41.2077096,-96.0229494,+1-402-991-1112,,Mo-Sa 09:00-18:00,A/C; Alignment; Batteries; Body work; Brakes; General repairs; Diagnostics; Electrical; Inspection; Motor; Muffler; Oil change; Painting; Transmission; Transmission Repair; Truck Repair; Tires; Used Car Sales,way,1253676847,https://www.openstreetmap.org/way/1253676847
-Tom & Jimmy's Auto Sales,,,,"7231 Lancaster Avenue, 68339",7231,Lancaster Avenue,,,68339,40.7371167,-96.8460803,,,,,way,199578874,https://www.openstreetmap.org/way/199578874
-Tommy's,,,,,,,,,,42.8285903,-102.9890492,,,,,node,5913948195,https://www.openstreetmap.org/node/5913948195
-Tonniges Motors,,,,,,,,,,41.0298427,-97.4069782,,,,,node,9949193255,https://www.openstreetmap.org/node/9949193255
+Tom & Jimmy's Auto Sales,,,,"7231 Lancaster Avenue, Denton, Nebraska 68339",7231,Lancaster Avenue,Denton,Nebraska,68339,40.7371167,-96.8460803,,,,,way,199578874,https://www.openstreetmap.org/way/199578874
+Tommy's,,,,"East 3rd Street, Chadron, Nebraska 69337",,East 3rd Street,Chadron,Nebraska,69337,42.8285903,-102.9890492,,,,,node,5913948195,https://www.openstreetmap.org/node/5913948195
+Tonniges Motors,,,,"Highway 69, Gresham, Nebraska 68367",,Highway 69,Gresham,Nebraska,68367,41.0298427,-97.4069782,,,,,node,9949193255,https://www.openstreetmap.org/node/9949193255
 Trust Auto Sales,,,Used only,"4815 Cornhusker Highway, Lincoln, NE 68504",4815,Cornhusker Highway,Lincoln,NE,68504,40.8521016,-96.6527885,+1-402-742-9959,https://www.trustautolincoln.com/,Mo-Fr 09:30-18:00; Sa 10:00-17:00,Used Car Sales,node,4242543317,https://www.openstreetmap.org/node/4242543317
-U Park It U Sell It,,,Used only,,,,,,,40.8944472,-98.3402836,,,,,node,8758746826,https://www.openstreetmap.org/node/8758746826
-United Auto,,,,,,,,,,42.4682824,-96.4278066,,,,,node,8955041896,https://www.openstreetmap.org/node/8955041896
-Vehicle Resale Lots,,,,,,,,,,41.1287912,-95.9133086,,,,,node,2010303386,https://www.openstreetmap.org/node/2010303386
+U Park It U Sell It,,,Used only,"South Locust Street, Grand Island, Nebraska 68801",,South Locust Street,Grand Island,Nebraska,68801,40.8944472,-98.3402836,,,,,node,8758746826,https://www.openstreetmap.org/node/8758746826
+United Auto,,,,"Cornhusker Drive, South Sioux City, Nebraska 68776",,Cornhusker Drive,South Sioux City,Nebraska,68776,42.4682824,-96.4278066,,,,,node,8955041896,https://www.openstreetmap.org/node/8955041896
+Vehicle Resale Lots,,,,"Nelson Drive, Bellevue Second IV Precinct, Nebraska 68113",,Nelson Drive,Bellevue Second IV Precinct,Nebraska,68113,41.1287912,-95.9133086,,,,,node,2010303386,https://www.openstreetmap.org/node/2010303386
 Village Pointe Toyota,,Berkshire Hathaway,,"18201 Cuming Street, Omaha, NE 68022",18201,Cuming Street,Omaha,NE,68022,41.2656386,-96.200524,+1-402-206-2295,https://www.villagepointetoyota.com/,,,node,4815023875,https://www.openstreetmap.org/node/4815023875
-Wayne Motors,,,,,,,,,,42.2258559,-97.0172247,,,,,node,3789965424,https://www.openstreetmap.org/node/3789965424
-Wolf,,,,,,,,,,40.5100085,-101.6338243,,,,,way,550499211,https://www.openstreetmap.org/way/550499211
-Woodhouse Car Dealership,ford,,,,,,,,,41.2919507,-96.0231453,,,,,node,5176588102,https://www.openstreetmap.org/node/5176588102
-Woodhouse Nissan,Nissan,,,,,,,,,41.1822654,-95.9352806,,,,,way,463183876,https://www.openstreetmap.org/way/463183876
-World Used Auto Sales,,,Used only,"1651 South 11th Street, 68401",1651,South 11th Street,,,68401,40.6622526,-95.8586271,,,,,way,207821486,https://www.openstreetmap.org/way/207821486
+Wayne Motors,,,,"South Main Street, Wayne, Nebraska 68787",,South Main Street,Wayne,Nebraska,68787,42.2258559,-97.0172247,,,,,node,3789965424,https://www.openstreetmap.org/node/3789965424
+Wolf,,,,"East 1st Street, Imperial, Nebraska 69033",,East 1st Street,Imperial,Nebraska,69033,40.5100085,-101.6338243,,,,,way,550499211,https://www.openstreetmap.org/way/550499211
+Woodhouse Car Dealership,ford,,,"Pratt Street, Omaha, Nebraska 68134",,Pratt Street,Omaha,Nebraska,68134,41.2919507,-96.0231453,,,,,node,5176588102,https://www.openstreetmap.org/node/5176588102
+Woodhouse Nissan,Nissan,,,"Nebraska Drive, Bellevue, Nebraska 68147",,Nebraska Drive,Bellevue,Nebraska,68147,41.1822654,-95.9352806,,,,,way,463183876,https://www.openstreetmap.org/way/463183876
+World Used Auto Sales,,,Used only,"1651 South 11th Street, Nebraska City, Nebraska 68401",1651,South 11th Street,Nebraska City,Nebraska,68401,40.6622526,-95.8586271,,,,,way,207821486,https://www.openstreetmap.org/way/207821486
 ,,,,"Aurora, NE",,,Aurora,NE,,40.872709,-98.0136232,,,,,node,1576450783,https://www.openstreetmap.org/node/1576450783
-,,,,,,,,,,40.2655143,-96.7642784,,,,,node,2662473489,https://www.openstreetmap.org/node/2662473489
-,,,,,,,,,,40.2692568,-96.7471933,,,,,node,2668116246,https://www.openstreetmap.org/node/2668116246
-,,,,,,,,,,42.2307425,-97.0160483,,,,,node,3790047378,https://www.openstreetmap.org/node/3790047378
-,,,,,,,,,,42.0179057,-97.4080043,,,,,node,3803148156,https://www.openstreetmap.org/node/3803148156
-,,,,,,,,,,41.437613,-97.3191386,,,,,node,3806093220,https://www.openstreetmap.org/node/3806093220
-,,,,,,,,,,42.4783522,-96.4127389,,,,,node,3806338601,https://www.openstreetmap.org/node/3806338601
-,,,,,,,,,,41.5257243,-96.1443304,,,,,node,3807997209,https://www.openstreetmap.org/node/3807997209
-,,,,,,,,,,41.5219732,-96.1439442,,,,,node,3807997214,https://www.openstreetmap.org/node/3807997214
-,,,,,,,,,,41.5228046,-96.1448776,,,,,node,3807997215,https://www.openstreetmap.org/node/3807997215
-,,,,,,,,,,41.5202983,-96.144486,,,,,node,3807997218,https://www.openstreetmap.org/node/3807997218
-,,,,,,,,,,41.521202,-96.1453389,,,,,node,3807997229,https://www.openstreetmap.org/node/3807997229
-,,,,,,,,,,40.9464926,-98.3820455,,,,,node,3816393837,https://www.openstreetmap.org/node/3816393837
-,,,,,,,,,,40.9030624,-98.3393456,,,,,node,3818179119,https://www.openstreetmap.org/node/3818179119
-,,,,,,,,,,40.9038774,-98.3390076,,,,,node,3818179142,https://www.openstreetmap.org/node/3818179142
-,,,,,,,,,,40.9266941,-98.3500369,,,,,node,3818179314,https://www.openstreetmap.org/node/3818179314
-,,,,,,,,,,40.8908109,-98.3402806,,,,,node,3818179327,https://www.openstreetmap.org/node/3818179327
-,,,,,,,,,,40.5674725,-98.3934664,,,,,node,3824090310,https://www.openstreetmap.org/node/3824090310
-,,,,,,,,,,40.5750252,-98.3934716,,,,,node,3824090336,https://www.openstreetmap.org/node/3824090336
-,,,,,,,,,,40.4383346,-99.3839913,,,,,node,3825984523,https://www.openstreetmap.org/node/3825984523
-,,,,,,,,,,40.4918659,-98.9526304,,,,,node,3827980410,https://www.openstreetmap.org/node/3827980410
-,,,,,,,,,,40.7024243,-99.0515253,,,,,node,3830150748,https://www.openstreetmap.org/node/3830150748
-,,,,,,,,,,40.6997828,-99.0669104,,,,,node,3830150864,https://www.openstreetmap.org/node/3830150864
-,,,,,,,,,,40.6997056,-99.0698152,,,,,node,3830158745,https://www.openstreetmap.org/node/3830158745
-,,,,,,,,,,40.7007142,-99.0765664,,,,,node,3830176172,https://www.openstreetmap.org/node/3830176172
-,,,,,,,,,,40.7008829,-99.0835991,,,,,node,3830182929,https://www.openstreetmap.org/node/3830182929
-,,,,,,,,,,40.6854574,-99.0852621,,,,,node,3830211670,https://www.openstreetmap.org/node/3830211670
-,,,,,,,,,,40.6895394,-99.0841007,,,,,node,3830211677,https://www.openstreetmap.org/node/3830211677
-,,,,,,,,,,40.6985566,-99.1212466,,,,,node,3830211700,https://www.openstreetmap.org/node/3830211700
-,,,,,,,,,,40.6921345,-99.085026,,,,,node,3830211714,https://www.openstreetmap.org/node/3830211714
-,,,,,,,,,,40.6869991,-99.0852111,,,,,node,3830211724,https://www.openstreetmap.org/node/3830211724
-,,,,,,,,,,41.0991882,-100.7627294,,,,,node,3860521759,https://www.openstreetmap.org/node/3860521759
-,,,,,,,,,,41.1041203,-100.7626559,,,,,node,3860521765,https://www.openstreetmap.org/node/3860521765
-,,,,,,,,,,41.1061126,-100.7650254,,,,,node,3860521772,https://www.openstreetmap.org/node/3860521772
-,,,,,,,,,,41.1441212,-100.7610825,,,,,node,3860575031,https://www.openstreetmap.org/node/3860575031
-,,,,,,,,,,41.1332615,-100.7428087,,,,,node,3860575038,https://www.openstreetmap.org/node/3860575038
-,,,,,,,,,,41.1334817,-100.7643656,,,,,node,3860575051,https://www.openstreetmap.org/node/3860575051
-,,,,,,,,,,41.1063471,-100.7628099,,,,,node,3860575056,https://www.openstreetmap.org/node/3860575056
-,,,,,,,,,,41.1352857,-100.7563404,,,,,node,3860576365,https://www.openstreetmap.org/node/3860576365
-,,,,,,,,,,41.1473307,-100.7662056,,,,,node,3860576392,https://www.openstreetmap.org/node/3860576392
-,,,,,,,,,,41.1301019,-100.7644138,,,,,node,3860576399,https://www.openstreetmap.org/node/3860576399
-,,,,,,,,,,41.8675947,-103.6429308,,,,,node,3879218217,https://www.openstreetmap.org/node/3879218217
-,,,,,,,,,,41.9858878,-96.9122665,,,,,node,3890015037,https://www.openstreetmap.org/node/3890015037
-,,,,,,,,,,41.8278553,-96.709166,,,,,node,3891205085,https://www.openstreetmap.org/node/3891205085
-,,,,,,,,,,41.85039,-96.7100108,,,,,node,3891205095,https://www.openstreetmap.org/node/3891205095
-,,,,,,,,,,40.1987891,-100.6213756,,,,,node,4057476702,https://www.openstreetmap.org/node/4057476702
-,,,,,,,,,,40.1991496,-100.6291137,,,,,node,4057493782,https://www.openstreetmap.org/node/4057493782
-,,,,,,,,,,41.2997949,-96.0050685,,,,,node,4072774047,https://www.openstreetmap.org/node/4072774047
-,,,,,,,,,,41.2998232,-96.0025124,,,,,node,4072774050,https://www.openstreetmap.org/node/4072774050
-,,,,,,,,,,41.2991421,-96.0121549,,,,,node,4072774060,https://www.openstreetmap.org/node/4072774060
-,,,,,,,,,,41.2682995,-95.957128,,,,,node,4079426898,https://www.openstreetmap.org/node/4079426898
-,,,,,,,,,,41.2411916,-95.9659682,,,,,node,4084072827,https://www.openstreetmap.org/node/4084072827
+,,,,"West Court Street, Beatrice, Nebraska 68310",,West Court Street,Beatrice,Nebraska,68310,40.2655143,-96.7642784,,,,,node,2662473489,https://www.openstreetmap.org/node/2662473489
+,,,,"High Street, Beatrice, Nebraska 68310",,High Street,Beatrice,Nebraska,68310,40.2692568,-96.7471933,,,,,node,2668116246,https://www.openstreetmap.org/node/2668116246
+,,,,"Logan Street, Wayne, Nebraska 68787",,Logan Street,Wayne,Nebraska,68787,42.2307425,-97.0160483,,,,,node,3790047378,https://www.openstreetmap.org/node/3790047378
+,,,,"West Omaha Avenue, Norfolk, Nebraska 68701",,West Omaha Avenue,Norfolk,Nebraska,68701,42.0179057,-97.4080043,,,,,node,3803148156,https://www.openstreetmap.org/node/3803148156
+,,,,"23rd Street, Columbus, Nebraska 68601",,23rd Street,Columbus,Nebraska,68601,41.437613,-97.3191386,,,,,node,3806093220,https://www.openstreetmap.org/node/3806093220
+,,,,"East 12th Street, South Sioux City, Nebraska 68776",,East 12th Street,South Sioux City,Nebraska,68776,42.4783522,-96.4127389,,,,,node,3806338601,https://www.openstreetmap.org/node/3806338601
+,,,,"South Highway 30, Blair, Nebraska 68008",,South Highway 30,Blair,Nebraska,68008,41.5257243,-96.1443304,,,,,node,3807997209,https://www.openstreetmap.org/node/3807997209
+,,,,"South Highway 30, Blair, Nebraska 68008",,South Highway 30,Blair,Nebraska,68008,41.5219732,-96.1439442,,,,,node,3807997214,https://www.openstreetmap.org/node/3807997214
+,,,,"South Highway 30, Blair, Nebraska 68008",,South Highway 30,Blair,Nebraska,68008,41.5228046,-96.1448776,,,,,node,3807997215,https://www.openstreetmap.org/node/3807997215
+,,,,"South Highway 30, Blair, Nebraska 68008",,South Highway 30,Blair,Nebraska,68008,41.5202983,-96.144486,,,,,node,3807997218,https://www.openstreetmap.org/node/3807997218
+,,,,"South Highway 30, Blair, Nebraska 68008",,South Highway 30,Blair,Nebraska,68008,41.521202,-96.1453389,,,,,node,3807997229,https://www.openstreetmap.org/node/3807997229
+,,,,"Saint Patrick Avenue, Grand Island, Nebraska 68803",,Saint Patrick Avenue,Grand Island,Nebraska,68803,40.9464926,-98.3820455,,,,,node,3816393837,https://www.openstreetmap.org/node/3816393837
+,,,,"South Locust Street, Grand Island, Nebraska 68801",,South Locust Street,Grand Island,Nebraska,68801,40.9030624,-98.3393456,,,,,node,3818179119,https://www.openstreetmap.org/node/3818179119
+,,,,"South Locust Street, Grand Island, Nebraska 68801",,South Locust Street,Grand Island,Nebraska,68801,40.9038774,-98.3390076,,,,,node,3818179142,https://www.openstreetmap.org/node/3818179142
+,,,,"North Eddy Street, Grand Island, Nebraska 68802",,North Eddy Street,Grand Island,Nebraska,68802,40.9266941,-98.3500369,,,,,node,3818179314,https://www.openstreetmap.org/node/3818179314
+,,,,"Woodland Drive, Grand Island, Nebraska 68801",,Woodland Drive,Grand Island,Nebraska,68801,40.8908109,-98.3402806,,,,,node,3818179327,https://www.openstreetmap.org/node/3818179327
+,,,,"West K Street, Hastings, Nebraska 68901",,West K Street,Hastings,Nebraska,68901,40.5674725,-98.3934664,,,,,node,3824090310,https://www.openstreetmap.org/node/3824090310
+,,,,"West F Street, Hastings, Nebraska 68901",,West F Street,Hastings,Nebraska,68901,40.5750252,-98.3934716,,,,,node,3824090336,https://www.openstreetmap.org/node/3824090336
+,,,,"McMillan Street, Holdrege, Nebraska 68949",,McMillan Street,Holdrege,Nebraska,68949,40.4383346,-99.3839913,,,,,node,3825984523,https://www.openstreetmap.org/node/3825984523
+,,,,"West Brewster Avenue, Minden, Nebraska 68959",,West Brewster Avenue,Minden,Nebraska,68959,40.4918659,-98.9526304,,,,,node,3827980410,https://www.openstreetmap.org/node/3827980410
+,,,,"East 25th Street, Kearney, Nebraska 68848",,East 25th Street,Kearney,Nebraska,68848,40.7024243,-99.0515253,,,,,node,3830150748,https://www.openstreetmap.org/node/3830150748
+,,,,"East 25th Street, Kearney, Nebraska 68847",,East 25th Street,Kearney,Nebraska,68847,40.6997828,-99.0669104,,,,,node,3830150864,https://www.openstreetmap.org/node/3830150864
+,,,,"Avenue I, Kearney, Nebraska 68847",,Avenue I,Kearney,Nebraska,68847,40.6997056,-99.0698152,,,,,node,3830158745,https://www.openstreetmap.org/node/3830158745
+,,,,"East 25th Street, Kearney, Nebraska 68847",,East 25th Street,Kearney,Nebraska,68847,40.7007142,-99.0765664,,,,,node,3830176172,https://www.openstreetmap.org/node/3830176172
+,,,,"West 25th Street, Kearney, Nebraska 68845",,West 25th Street,Kearney,Nebraska,68845,40.7008829,-99.0835991,,,,,node,3830182929,https://www.openstreetmap.org/node/3830182929
+,,,,"West 11th Street, Kearney, Nebraska 68849",,West 11th Street,Kearney,Nebraska,68849,40.6854574,-99.0852621,,,,,node,3830211670,https://www.openstreetmap.org/node/3830211670
+,,,,"West 15th Street, Kearney, Nebraska 68849",,West 15th Street,Kearney,Nebraska,68849,40.6895394,-99.0841007,,,,,node,3830211677,https://www.openstreetmap.org/node/3830211677
+,,,,"West 24th Street, Kearney, Nebraska 68849",,West 24th Street,Kearney,Nebraska,68849,40.6985566,-99.1212466,,,,,node,3830211700,https://www.openstreetmap.org/node/3830211700
+,,,,"West 18th Street, Kearney, Nebraska 68845",,West 18th Street,Kearney,Nebraska,68845,40.6921345,-99.085026,,,,,node,3830211714,https://www.openstreetmap.org/node/3830211714
+,,,,"West 13th Street, Kearney, Nebraska 68849",,West 13th Street,Kearney,Nebraska,68849,40.6869991,-99.0852111,,,,,node,3830211724,https://www.openstreetmap.org/node/3830211724
+,,,,"East Fremont Drive, North Platte, Nebraska 69101",,East Fremont Drive,North Platte,Nebraska,69101,41.0991882,-100.7627294,,,,,node,3860521759,https://www.openstreetmap.org/node/3860521759
+,,,,"East Walker Road, North Platte, Nebraska 69101",,East Walker Road,North Platte,Nebraska,69101,41.1041203,-100.7626559,,,,,node,3860521765,https://www.openstreetmap.org/node/3860521765
+,,,,"South Jeffers Street, North Platte, Nebraska 69101",,South Jeffers Street,North Platte,Nebraska,69101,41.1061126,-100.7650254,,,,,node,3860521772,https://www.openstreetmap.org/node/3860521772
+,,,,"East 10th Street, North Platte, Nebraska 69103",,East 10th Street,North Platte,Nebraska,69103,41.1441212,-100.7610825,,,,,node,3860575031,https://www.openstreetmap.org/node/3860575031
+,,,,"North Welch Avenue, North Platte, Nebraska 69103",,North Welch Avenue,North Platte,Nebraska,69103,41.1332615,-100.7428087,,,,,node,3860575038,https://www.openstreetmap.org/node/3860575038
+,,,,"West A Street, North Platte, Nebraska 69103",,West A Street,North Platte,Nebraska,69103,41.1334817,-100.7643656,,,,,node,3860575051,https://www.openstreetmap.org/node/3860575051
+,,,,"South Jeffers Street, North Platte, Nebraska 69101",,South Jeffers Street,North Platte,Nebraska,69101,41.1063471,-100.7628099,,,,,node,3860575056,https://www.openstreetmap.org/node/3860575056
+,,,,"East 4th Street, North Platte, Nebraska 69103",,East 4th Street,North Platte,Nebraska,69103,41.1352857,-100.7563404,,,,,node,3860576365,https://www.openstreetmap.org/node/3860576365
+,,,,"North Ash Street, North Platte, Nebraska 69103",,North Ash Street,North Platte,Nebraska,69103,41.1473307,-100.7662056,,,,,node,3860576392,https://www.openstreetmap.org/node/3860576392
+,,,,"West E Street, North Platte, Nebraska 69103",,West E Street,North Platte,Nebraska,69103,41.1301019,-100.7644138,,,,,node,3860576399,https://www.openstreetmap.org/node/3860576399
+,,,,"South Frontage Road, Scottsbluff, Nebraska 69361",,South Frontage Road,Scottsbluff,Nebraska,69361,41.8675947,-103.6429308,,,,,node,3879218217,https://www.openstreetmap.org/node/3879218217
+,,,,"E Avenue East, Wisner, Nebraska",,E Avenue East,Wisner,Nebraska,,41.9858878,-96.9122665,,,,,node,3890015037,https://www.openstreetmap.org/node/3890015037
+,,,,"Highway 275, West Point, Nebraska 68788",,Highway 275,West Point,Nebraska,68788,41.8278553,-96.709166,,,,,node,3891205085,https://www.openstreetmap.org/node/3891205085
+,,,,"East Wisner Street, West Point, Nebraska 68788",,East Wisner Street,West Point,Nebraska,68788,41.85039,-96.7100108,,,,,node,3891205095,https://www.openstreetmap.org/node/3891205095
+,,,,"East B Street, McCook, Nebraska 69001",,East B Street,McCook,Nebraska,69001,40.1987891,-100.6213756,,,,,node,4057476702,https://www.openstreetmap.org/node/4057476702
+,,,,"West 2nd Street, McCook, Nebraska 69001",,West 2nd Street,McCook,Nebraska,69001,40.1991496,-100.6291137,,,,,node,4057493782,https://www.openstreetmap.org/node/4057493782
+,,,,"Ames Avenue, Omaha, Nebraska 68134",,Ames Avenue,Omaha,Nebraska,68134,41.2997949,-96.0050685,,,,,node,4072774047,https://www.openstreetmap.org/node/4072774047
+,,,,"Ames Avenue, Omaha, Nebraska 68134",,Ames Avenue,Omaha,Nebraska,68134,41.2998232,-96.0025124,,,,,node,4072774050,https://www.openstreetmap.org/node/4072774050
+,,,,"Ames Avenue, Omaha, Nebraska 68134",,Ames Avenue,Omaha,Nebraska,68134,41.2991421,-96.0121549,,,,,node,4072774060,https://www.openstreetmap.org/node/4072774060
+,,,,"3002 Cuming Street, Omaha, Nebraska 68131",3002,Cuming Street,Omaha,Nebraska,68131,41.2682995,-95.957128,,,,,node,4079426898,https://www.openstreetmap.org/node/4079426898
+,,,,"Center Street, Omaha, Nebraska 68106",,Center Street,Omaha,Nebraska,68106,41.2411916,-95.9659682,,,,,node,4084072827,https://www.openstreetmap.org/node/4084072827
 ,,,,"2525 North 90th Street, Omaha, NE 68134",2525,North 90th Street,Omaha,NE,68134,41.2821739,-96.052282,,,,,node,4089539652,https://www.openstreetmap.org/node/4089539652
 ,,,,"2624 North 90th Street, Omaha, NE 68134",2624,North 90th Street,Omaha,NE,68134,41.2826133,-96.0531082,,,,,node,4089539688,https://www.openstreetmap.org/node/4089539688
-,,,,,,,,,,41.2118398,-96.0291151,,,,,node,4152780376,https://www.openstreetmap.org/node/4152780376
+,,,,"L Street Frontage Road South, Ralston, Nebraska 68127",,L Street Frontage Road South,Ralston,Nebraska,68127,41.2118398,-96.0291151,,,,,node,4152780376,https://www.openstreetmap.org/node/4152780376
 ,,,,"941 North 48th Street, Lincoln, NE 68503",941,North 48th Street,Lincoln,NE,68503,40.8230048,-96.6542562,,,,,node,4242543330,https://www.openstreetmap.org/node/4242543330
-,,,,,,,,,,40.8425198,-96.697186,,,,,node,4243896835,https://www.openstreetmap.org/node/4243896835
+,,,,"1616 Cornhusker Highway, Lincoln, Nebraska 68521",1616,Cornhusker Highway,Lincoln,Nebraska,68521,40.8425198,-96.697186,,,,,node,4243896835,https://www.openstreetmap.org/node/4243896835
 ,,,,"1400 Cornhusker Highway, Lincoln, NE 68521",1400,Cornhusker Highway,Lincoln,NE,68521,40.8398697,-96.7009518,,,,,node,4243896866,https://www.openstreetmap.org/node/4243896866
-,,,,,,,,,,40.7715213,-96.6545082,,,,,node,4247729859,https://www.openstreetmap.org/node/4247729859
-,,,,,,,,,,41.4452153,-96.48397,,,,,node,4945104082,https://www.openstreetmap.org/node/4945104082
+,,,,"Lowell Avenue, Lincoln, Nebraska 68506",,Lowell Avenue,Lincoln,Nebraska,68506,40.7715213,-96.6545082,,,,,node,4247729859,https://www.openstreetmap.org/node/4247729859
+,,,,"East 17th Street, Fremont, Nebraska 68025",,East 17th Street,Fremont,Nebraska,68025,41.4452153,-96.48397,,,,,node,4945104082,https://www.openstreetmap.org/node/4945104082
 ,,,,"Telluride Drive, Lincoln, NE 68521",,Telluride Drive,Lincoln,NE,68521,40.8792484,-96.6845742,,,,,node,5187548309,https://www.openstreetmap.org/node/5187548309
 ,,,,"6601 Telluride Drive, Lincoln, NE 68521",6601,Telluride Drive,Lincoln,NE,68521,40.8778381,-96.6846277,,,,,node,5187548597,https://www.openstreetmap.org/node/5187548597
 ,,,,"Telluride Drive, Lincoln, NE 68521",,Telluride Drive,Lincoln,NE,68521,40.8797895,-96.6841598,,,,,node,5217282102,https://www.openstreetmap.org/node/5217282102
-,,,,,,,,,,41.2160696,-96.6222455,,,,,node,5220961486,https://www.openstreetmap.org/node/5220961486
-,,,,,,,,,,41.2163533,-96.6222707,,,,,node,5220961489,https://www.openstreetmap.org/node/5220961489
-,,,Used only,,,,,,,41.2816998,-95.9612812,,,,,node,5352889578,https://www.openstreetmap.org/node/5352889578
+,,,,"North Chestnut Street, Wahoo, Nebraska 68066",,North Chestnut Street,Wahoo,Nebraska,68066,41.2160696,-96.6222455,,,,,node,5220961486,https://www.openstreetmap.org/node/5220961486
+,,,,"North Chestnut Street, Wahoo, Nebraska 68066",,North Chestnut Street,Wahoo,Nebraska,68066,41.2163533,-96.6222707,,,,,node,5220961489,https://www.openstreetmap.org/node/5220961489
+,,,Used only,"North 33rd Street, Omaha, Nebraska 68111",,North 33rd Street,Omaha,Nebraska,68111,41.2816998,-95.9612812,,,,,node,5352889578,https://www.openstreetmap.org/node/5352889578
 ,,,,"South Lincoln Avenue, York, NE",,South Lincoln Avenue,York,NE,,40.8379476,-97.5963581,,,,,node,6821478873,https://www.openstreetmap.org/node/6821478873
-,,,,,,,,,,40.0191334,-98.0662968,,,,,node,11128534807,https://www.openstreetmap.org/node/11128534807
+,,,,"East 3rd Street, Superior, Nebraska 68978",,East 3rd Street,Superior,Nebraska,68978,40.0191334,-98.0662968,,,,,node,11128534807,https://www.openstreetmap.org/node/11128534807
 ,,,,"4011 Bedford Avenue, Omaha 68111",4011,Bedford Avenue,Omaha,,68111,41.2884368,-95.9724807,,,,,node,12434387782,https://www.openstreetmap.org/node/12434387782
-,,,,,,,,,,41.2029714,-96.1260571,,,,,way,184081704,https://www.openstreetmap.org/way/184081704
-,,,Used only,,,,,,,41.2048297,-96.1162403,,,,,way,184102276,https://www.openstreetmap.org/way/184102276
-,,,,,,,,,,41.1810249,-95.9277154,,,,,way,189973202,https://www.openstreetmap.org/way/189973202
-,,,,,,,,,,41.1710142,-95.9249579,,,,,way,189974389,https://www.openstreetmap.org/way/189974389
-,,,,,,,,,,41.1437649,-95.9127392,,,,,way,189992532,https://www.openstreetmap.org/way/189992532
-,,,,,,,,,,41.1700825,-95.9269975,,,,,way,189994613,https://www.openstreetmap.org/way/189994613
-,,,,,,,,,,41.1662635,-95.9265646,,,,,way,189994637,https://www.openstreetmap.org/way/189994637
-,,,,,,,,,,41.1688462,-95.9271021,,,,,way,189994641,https://www.openstreetmap.org/way/189994641
-,,,,,,,,,,41.166945,-95.9265836,,,,,way,189994646,https://www.openstreetmap.org/way/189994646
-,,,,,,,,,,41.1485818,-95.9288479,,,,,way,190129700,https://www.openstreetmap.org/way/190129700
-,,,,,,,,,,40.6595889,-95.8598397,,,,,way,207815499,https://www.openstreetmap.org/way/207815499
-,,,,,,,,,,41.2128411,-96.0074407,,,,,way,399591192,https://www.openstreetmap.org/way/399591192
-,,,,,,,,,,40.2645122,-96.7463409,,,,,way,443675716,https://www.openstreetmap.org/way/443675716
-,,,Both new & used,,,,,,,41.2684878,-95.9808536,,,,,way,478195631,https://www.openstreetmap.org/way/478195631
-,,,Used only,,,,,,,40.9196161,-98.3844692,,,,,way,549333068,https://www.openstreetmap.org/way/549333068
+,,,,"Discovery Drive, Omaha, Nebraska 68137",,Discovery Drive,Omaha,Nebraska,68137,41.2029714,-96.1260571,,,,,way,184081704,https://www.openstreetmap.org/way/184081704
+,,,Used only,"Q Street, Omaha, Nebraska 68135",,Q Street,Omaha,Nebraska,68135,41.2048297,-96.1162403,,,,,way,184102276,https://www.openstreetmap.org/way/184102276
+,,,,"Fort Crook Road North, Bellevue, Nebraska 68005",,Fort Crook Road North,Bellevue,Nebraska,68005,41.1810249,-95.9277154,,,,,way,189973202,https://www.openstreetmap.org/way/189973202
+,,,,"Virginia Avenue, Bellevue, Nebraska 68005",,Virginia Avenue,Bellevue,Nebraska,68005,41.1710142,-95.9249579,,,,,way,189974389,https://www.openstreetmap.org/way/189974389
+,,,,"John F Kennedy Drive, Bellevue, Nebraska 68005",,John F Kennedy Drive,Bellevue,Nebraska,68005,41.1437649,-95.9127392,,,,,way,189992532,https://www.openstreetmap.org/way/189992532
+,,,,"Fort Crook West Frontage Road, Bellevue, Nebraska 68005",,Fort Crook West Frontage Road,Bellevue,Nebraska,68005,41.1700825,-95.9269975,,,,,way,189994613,https://www.openstreetmap.org/way/189994613
+,,,,"Fort Crook Frontage Road, Bellevue, Nebraska 68005",,Fort Crook Frontage Road,Bellevue,Nebraska,68005,41.1662635,-95.9265646,,,,,way,189994637,https://www.openstreetmap.org/way/189994637
+,,,,"Alberta Avenue, Bellevue, Nebraska 68005",,Alberta Avenue,Bellevue,Nebraska,68005,41.1688462,-95.9271021,,,,,way,189994641,https://www.openstreetmap.org/way/189994641
+,,,,"Fort Crook Frontage Road, Bellevue, Nebraska 68005",,Fort Crook Frontage Road,Bellevue,Nebraska,68005,41.166945,-95.9265836,,,,,way,189994646,https://www.openstreetmap.org/way/189994646
+,,,,"Fort Crook Frontage Road, Bellevue, Nebraska 68005",,Fort Crook Frontage Road,Bellevue,Nebraska,68005,41.1485818,-95.9288479,,,,,way,190129700,https://www.openstreetmap.org/way/190129700
+,,,,"Grundman Boulevard, Nebraska City, Nebraska 68410",,Grundman Boulevard,Nebraska City,Nebraska,68410,40.6595889,-95.8598397,,,,,way,207815499,https://www.openstreetmap.org/way/207815499
+,,,,"L Street Frontage Road North, Omaha, Nebraska 68117",,L Street Frontage Road North,Omaha,Nebraska,68117,41.2128411,-96.0074407,,,,,way,399591192,https://www.openstreetmap.org/way/399591192
+,,,,"Market Street, Beatrice, Nebraska 68310",,Market Street,Beatrice,Nebraska,68310,40.2645122,-96.7463409,,,,,way,443675716,https://www.openstreetmap.org/way/443675716
+,,,Both new & used,"Cuming Street, Omaha, Nebraska 68198",,Cuming Street,Omaha,Nebraska,68198,41.2684878,-95.9808536,,,,,way,478195631,https://www.openstreetmap.org/way/478195631
+,,,Used only,"Kaufman Avenue, Grand Island, Nebraska 68803",,Kaufman Avenue,Grand Island,Nebraska,68803,40.9196161,-98.3844692,,,,,way,549333068,https://www.openstreetmap.org/way/549333068
 ,,,,"2040 O Street, Lincoln, NE 68503",2040,O Street,Lincoln,NE,68503,40.8140789,-96.6912273,,,,,way,605953583,https://www.openstreetmap.org/way/605953583
-,,,,,,,,,,41.2088713,-96.1262026,,,,,way,608458578,https://www.openstreetmap.org/way/608458578
+,,,,"South 136th Street, Omaha, Nebraska 68137",,South 136th Street,Omaha,Nebraska,68137,41.2088713,-96.1262026,,,,,way,608458578,https://www.openstreetmap.org/way/608458578
 ,,,,"1644 M Street, Lincoln, NE 68508",1644,M Street,Lincoln,NE,68508,40.8116921,-96.6971779,,,,,way,703436293,https://www.openstreetmap.org/way/703436293
-,,,Used only,,,,,,,40.8359621,-96.721007,,,,,way,1137654039,https://www.openstreetmap.org/way/1137654039
+,,,Used only,"West Cornhusker Highway, Lincoln, Nebraska 68521",,West Cornhusker Highway,Lincoln,Nebraska,68521,40.8359621,-96.721007,,,,,way,1137654039,https://www.openstreetmap.org/way/1137654039
 ,,,,"3900 North 27th Street, Lincoln, NE 68521",3900,North 27th Street,Lincoln,NE,68521,40.8509208,-96.6815776,+1-402-464-9397,https://www.eastepswheels.com/,,,way,1138122913,https://www.openstreetmap.org/way/1138122913
-,,,,,,,,,,40.4371515,-99.3883519,,,,,way,1158321674,https://www.openstreetmap.org/way/1158321674
-,,,Used only,,,,,,,41.211895,-96.0195051,,,,,way,1272066490,https://www.openstreetmap.org/way/1272066490
-,,,,,,,,,,42.0185004,-97.4273331,,,,,way,1335266590,https://www.openstreetmap.org/way/1335266590
-,,,,,,,,,,41.6846506,-97.9925135,,,,,way,1530494120,https://www.openstreetmap.org/way/1530494120
+,,,,"West 3rd Avenue, Holdrege, Nebraska 68949",,West 3rd Avenue,Holdrege,Nebraska,68949,40.4371515,-99.3883519,,,,,way,1158321674,https://www.openstreetmap.org/way/1158321674
+,,,Used only,"L Street Frontage Road South, Omaha, Nebraska 68117",,L Street Frontage Road South,Omaha,Nebraska,68117,41.211895,-96.0195051,,,,,way,1272066490,https://www.openstreetmap.org/way/1272066490
+,,,,"West Omaha Avenue, Norfolk, Nebraska 68701",,West Omaha Avenue,Norfolk,Nebraska,68701,42.0185004,-97.4273331,,,,,way,1335266590,https://www.openstreetmap.org/way/1335266590
+,,,,"Highway 14, Albion, Nebraska 68620",,Highway 14,Albion,Nebraska,68620,41.6846506,-97.9925135,,,,,way,1530494120,https://www.openstreetmap.org/way/1530494120
