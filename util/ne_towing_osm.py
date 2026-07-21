@@ -1,35 +1,5 @@
 #!/usr/bin/env python3
 """
-ne_towing_osm.py
-================
-
-Collate a database of towing / recovery / roadside-assistance services in
-Nebraska (or any US state) from OpenStreetMap via the Overpass API.
-
-For each operator it captures:
-    - name
-    - address (assembled from addr:* tags, plus the raw components)
-    - latitude / longitude
-    - phone, website, opening hours
-    - a list of services (towing + any vehicle services also tagged)
-    - how it was tagged in OSM (data-quality signal)
-    - flags for 24/7 availability and heavy-duty capability
-
->>> IMPORTANT CAVEAT ABOUT TOWING DATA IN OSM <<<
-    OpenStreetMap has NO agreed-upon tag for towing companies. A formal
-    proposal (amenity=towing) exists but is not yet adopted, so in the wild
-    towing operators are tagged inconsistently:
-        - shop=car_repair            (most common; often with no actual repair)
-        - service:vehicle:towing=yes (a service flag on some shops)
-        - amenity=towing / shop=towing / office=towing / towing=yes  (rare)
-    This script queries ALL of those, plus a name filter for "towing"/"wrecker".
-    Even so, expect SPARSE and PATCHY coverage compared with repair shops.
-
-    Because of that sparseness, for towing specifically the cleaner route is
-    often the ReferenceUSA / Data Axle library export filtered on
-    NAICS 488410 "Motor Vehicle Towing" -- it will be far more complete.
-    Use this OSM script as a free, redistributable supplement.
-
 USAGE
     pip install requests
     python ne_towing_osm.py                 # defaults to Nebraska (US-NE)
@@ -39,10 +9,6 @@ USAGE
 OUTPUT
     <out>.csv   - one row per operator, spreadsheet-friendly
     <out>.json  - same records plus the complete raw OSM tag set (for audit)
-
-POLITE USAGE
-    The public Overpass endpoints are a shared, donated resource. Run this
-    infrequently (the whole state is one query); don't loop over it.
 """
 
 import argparse
