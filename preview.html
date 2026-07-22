@@ -450,6 +450,20 @@ function addMarkers(results, searchLat, searchLon) {
       ? r.services.map(s => `<span class="svc-badge">${escHtml(s)}</span>`).join(' ')
       : '<em style="color:#999;">No services listed</em>';
 
+    // Build external site links per source type
+    let extLink = '';
+    if (r.source === 'Mechanic' || r.source === 'Dealer') {
+      // RepairPal city-state slug: auto-repair-in-omaha-nebraska
+      const citySlug = (r.city || '').toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+      const stateName = {NE:'nebraska', IA:'iowa', KS:'kansas', MO:'missouri', SD:'south-dakota', CO:'colorado', WY:'wyoming', MN:'minnesota'};
+      const stateSlug = stateName[r.state?.toUpperCase()] || (r.state || '').toLowerCase();
+      const rpUrl = `https://repairpal.com/auto-repair-near-me/auto-repair-in-${citySlug}-${stateSlug}`;
+      extLink = `<div class="popup-ext"><a href="${rpUrl}" target="_blank">💰 RepairPal — compare prices &amp; ratings in ${escHtml(r.city || 'this area')}</a></div>`;
+    } else if (r.source === 'Charging') {
+      const query = encodeURIComponent(`ev charging stations ${r.city || ''} ${r.state || ''}`);
+      extLink = `<div class="popup-ext"><a href="https://www.google.com/maps/search/${query}" target="_blank">🔌 Find chargers near ${escHtml(r.city || 'this area')} on Google Maps</a></div>`;
+    }
+
     const marker = L.marker([r.lat, r.lon], { icon })
       .addTo(map)
       .bindPopup(`
@@ -458,6 +472,7 @@ function addMarkers(results, searchLat, searchLon) {
         <div class="popup-addr">${escHtml(r.address || r.city + (r.state ? ', ' + r.state : ''))}</div>
         ${r.website ? `<div class="popup-web"><a href="${escHtml(r.website)}" target="_blank">🌐 ${escHtml(r.website)}</a></div>` : ''}
         <div class="popup-svcs">${svcStr}</div>
+        ${extLink}
         <div class="popup-link" style="display:flex;justify-content:space-between;align-items:center;">
           <span><a href="${escHtml(r.osm_url || '#')}" target="_blank">View on OpenStreetMap ↗</a>
           &nbsp;·&nbsp; ${r.distance.toFixed(1)} mi</span>
@@ -535,6 +550,7 @@ async function loadData() {
       if (!name) continue;
       allRows.push({
         name, city: row[mIdx.city] || '', state: row[mIdx.state] || '',
+        postcode: row[mIdx.postcode] || '',
         lat, lon, address: row[mIdx.address] || '',
         phone: row[mIdx.phone] || '', website: row[mIdx.website] || '',
         hours: row[mIdx.opening_hours] || '',
@@ -552,6 +568,7 @@ async function loadData() {
       if (!name) continue;
       allRows.push({
         name, city: row[tIdx.city] || '', state: row[tIdx.state] || '',
+        postcode: row[tIdx.postcode] || '',
         lat, lon, address: row[tIdx.address] || '',
         phone: row[tIdx.phone] || '', website: row[tIdx.website] || '',
         hours: row[tIdx.opening_hours] || '',
@@ -570,6 +587,7 @@ async function loadData() {
       if (!name) continue;
       allRows.push({
         name, city: row[pIdx.city] || '', state: row[pIdx.state] || '',
+        postcode: row[pIdx.postcode] || '',
         lat, lon, address: row[pIdx.address] || '',
         phone: row[pIdx.phone] || '', website: row[pIdx.website] || '',
         hours: row[pIdx.opening_hours] || '',
@@ -588,6 +606,7 @@ async function loadData() {
       if (!name) continue;
       allRows.push({
         name, city: row[cIdx.city] || '', state: row[cIdx.state] || '',
+        postcode: row[cIdx.postcode] || '',
         lat, lon, address: row[cIdx.address] || '',
         phone: row[cIdx.phone] || '', website: row[cIdx.website] || '',
         hours: row[cIdx.opening_hours] || '',
@@ -606,6 +625,7 @@ async function loadData() {
       if (!name) continue;
       allRows.push({
         name, city: row[dIdx.city] || '', state: row[dIdx.state] || '',
+        postcode: row[dIdx.postcode] || '',
         lat, lon, address: row[dIdx.address] || '',
         phone: row[dIdx.phone] || '', website: row[dIdx.website] || '',
         hours: row[dIdx.opening_hours] || '',
