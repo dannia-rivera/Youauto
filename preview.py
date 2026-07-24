@@ -1,4 +1,11 @@
 """YouAuto Preview — serve the finder and open it in a browser."""
+##
+# @file preview.py
+# @brief Main file for the YouAuto web application.
+#
+# This file starts the Flask application and handles
+# requests for the YouAuto website.
+##
 import csv
 import http.server
 import os
