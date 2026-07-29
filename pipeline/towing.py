@@ -251,7 +251,7 @@ def main() -> None:
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--state", default="US-NE",
                         help="ISO 3166-2 state code (default: US-NE for Nebraska)")
-    parser.add_argument("--out", default="ne_towing",
+    parser.add_argument("--out", default="data/towing",
                         help="Output filename stem (default: ne_towing)")
     args = parser.parse_args()
 

@@ -326,7 +326,7 @@ def main() -> None:
     )
     parser.add_argument("--state", default="US-NE",
                         help="ISO 3166-2 state code (default: US-NE for Nebraska)")
-    parser.add_argument("--out", default="ne_dealerships",
+    parser.add_argument("--out", default="data/dealerships",
                         help="Output filename stem (default: ne_dealerships)")
     parser.add_argument("--no-enrich", action="store_true",
                         help="Skip Nominatim reverse-geocoding to fill missing addresses")

@@ -506,9 +506,9 @@ async function loadData() {
   try {
     const ts = Date.now();
     const [mechResp, towResp, partsResp, chargeResp, dealerResp] = await Promise.all([
-      fetch(`ne_mechanics.csv?t=${ts}`), fetch(`ne_towing.csv?t=${ts}`),
-      fetch(`ne_parts.csv?t=${ts}`), fetch(`ne_charging.csv?t=${ts}`),
-      fetch(`ne_dealerships.csv?t=${ts}`)
+      fetch(`data/mechanics.csv?t=${ts}`), fetch(`data/towing.csv?t=${ts}`),
+      fetch(`data/parts.csv?t=${ts}`), fetch(`data/charging.csv?t=${ts}`),
+      fetch(`data/dealerships.csv?t=${ts}`)
     ]);
     const mechText    = await mechResp.text();
     const towText     = await towResp.text();
