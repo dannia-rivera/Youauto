@@ -1,11 +1,4 @@
 """YouAuto Preview — serve the finder and open it in a browser."""
-##
-# @file preview.py
-# @brief Main file for the YouAuto web application.
-#
-# This file starts the Flask application and handles
-# requests for the YouAuto website.
-##
 import csv
 import http.server
 import os
@@ -18,8 +11,8 @@ from urllib.parse import parse_qs
 
 
 PORT = 8080
-DIR = Path(__file__).resolve().parent
-REPORTS_CSV = DIR / "reports.csv"
+DIR = Path(__file__).resolve().parent.parent   # project root
+REPORTS_CSV = DIR / "data" / "reports.csv"
 
 # Ensure reports CSV exists with header
 if not REPORTS_CSV.exists():
@@ -70,8 +63,8 @@ def main():
     os.chdir(DIR)
     http.server.HTTPServer.allow_reuse_address = True
     server = http.server.HTTPServer(("", PORT), Handler)
-    threading.Timer(0.5, lambda: webbrowser.open(f"http://localhost:{PORT}/preview.html")).start()
-    print(f"Serving {DIR} on http://localhost:{PORT}/preview.html")
+    threading.Timer(0.5, lambda: webbrowser.open(f"http://localhost:{PORT}")).start()
+    print(f"Serving {DIR} on http://localhost:{PORT}")
     print("  Press Ctrl+C to stop.")
     try:
         server.serve_forever()

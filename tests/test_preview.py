@@ -12,11 +12,11 @@ import pytest
 
 # ── Project root ────────────────────────────────────────────────────────────
 PROJECT = Path(__file__).resolve().parent.parent
-MECHANICS_CSV = PROJECT / "ne_mechanics.csv"
-TOWING_CSV = PROJECT / "ne_towing.csv"
-MECHANICS_JSON = PROJECT / "ne_mechanics.json"
-PREVIEW_PY = PROJECT / "preview.py"
-PREVIEW_HTML = PROJECT / "preview.html"
+MECHANICS_CSV = PROJECT / "data" / "mechanics.csv"
+TOWING_CSV = PROJECT / "data" / "towing.csv"
+MECHANICS_JSON = PROJECT / "data" / "mechanics.json"
+PREVIEW_PY = PROJECT / "app" / "server.py"
+PREVIEW_HTML = PROJECT / "index.html"
 
 # Nebraska bounding box (rough) — all seeded data should fall inside.
 NE_LAT_MIN, NE_LAT_MAX = 39.9, 43.1
@@ -279,7 +279,7 @@ class TestHandler:
     def test_sends_no_cache_headers(self):
         """Verify end_headers() adds the three cache-prevention headers."""
         sys.path.insert(0, str(PROJECT))
-        import preview  # type: ignore
+        from app import server  # type: ignore
 
         # Build a mock request with the minimum needed to avoid triggering
         # the read/handle loop in BaseHTTPRequestHandler.__init__.
@@ -290,14 +290,14 @@ class TestHandler:
         # We intercept send_header during that first request.
         headers_sent = {}
 
-        original_send_header = preview.Handler.send_header
+        original_send_header = server.Handler.send_header
 
         def capture_header(self, keyword, value):
             headers_sent[keyword] = value
             return original_send_header(self, keyword, value)
 
-        with mock.patch.object(preview.Handler, "send_header", capture_header):
-            handler = preview.Handler(
+        with mock.patch.object(server.Handler, "send_header", capture_header):
+            handler = server.Handler(
                 mock_request, ("127.0.0.1", 12345), mock.Mock()
             )
 
@@ -323,7 +323,7 @@ class TestServerEndpoints:
 
     def test_preview_html_serves(self, server_running):
         import urllib.request
-        resp = urllib.request.urlopen("http://localhost:8080/preview.html")
+        resp = urllib.request.urlopen("http://localhost:8080/")
         assert resp.status == 200
         body = resp.read().decode()
         assert "<title>YouAuto" in body
@@ -331,13 +331,13 @@ class TestServerEndpoints:
 
     def test_mechanics_csv_serves(self, server_running):
         import urllib.request
-        resp = urllib.request.urlopen("http://localhost:8080/ne_mechanics.csv")
+        resp = urllib.request.urlopen("http://localhost:8080/data/mechanics.csv")
         assert resp.status == 200
         assert int(resp.headers["Content-Length"]) > 10000
 
     def test_towing_csv_serves(self, server_running):
         import urllib.request
-        resp = urllib.request.urlopen("http://localhost:8080/ne_towing.csv")
+        resp = urllib.request.urlopen("http://localhost:8080/data/towing.csv")
         assert resp.status == 200
 
     def test_missing_path_returns_404(self, server_running):
@@ -351,7 +351,7 @@ class TestServerEndpoints:
 
     def test_cache_headers_present(self, server_running):
         import urllib.request
-        resp = urllib.request.urlopen("http://localhost:8080/preview.html")
+        resp = urllib.request.urlopen("http://localhost:8080/")
         assert resp.headers["Cache-Control"] == (
             "no-store, no-cache, must-revalidate, max-age=0"
         )
